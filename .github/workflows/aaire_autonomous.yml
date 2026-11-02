@@ -15,7 +15,6 @@ permissions:
 
 jobs:
   run-aaire-brain:
-    runs-only: ubuntu-latest
     runs-on: ubuntu-latest
 
     steps:
