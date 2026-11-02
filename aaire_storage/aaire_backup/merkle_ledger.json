@@ -1,0 +1,11 @@
+[
+  {
+    "index": 0,
+    "version_tag": "20261102_094816",
+    "timestamp": "2026-11-02T09:48:16.191437+00:00",
+    "snapshot_file": "state_snapshot_20261102_094816.json",
+    "snapshot_sha256": "8055ce070dccb1459a42edb2f80a44f68eb8f8004bb528caee87d8f2ee326542",
+    "prev_merkle_root": "0000000000000000000000000000000000000000000000000000000000000000",
+    "merkle_root": "19e07b70cd646a9b503e4c93ebd7e17a045f97fee7b52ae25f8e9ef42ead3e63"
+  }
+]
