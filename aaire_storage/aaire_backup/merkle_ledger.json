@@ -430,5 +430,14 @@
     "snapshot_sha256": "2a0467535ee5f3be7b905375e0909ffead1610ac1211230c810e4779c9ebda0c",
     "prev_merkle_root": "0921a6ba1ec0a5bcb24b2b6a7729b22fe17e0cbe70384bd03ea671259e855575",
     "merkle_root": "4c3cdc004e6768ec20ba720694cb96c99a547393f5ef448a52c58f4373d2b236"
+  },
+  {
+    "index": 48,
+    "version_tag": "20261103_183013",
+    "timestamp": "2026-11-03T18:30:13.811499+00:00",
+    "snapshot_file": "state_snapshot_20261103_183013.json",
+    "snapshot_sha256": "ffde1162e04e9b6e7ef44486bab925e5bb94be9b118e190fdfe43a1c21b88c79",
+    "prev_merkle_root": "4c3cdc004e6768ec20ba720694cb96c99a547393f5ef448a52c58f4373d2b236",
+    "merkle_root": "d835ae5b829726552118ab00254924ae092607fd5eb30ae5160c15aa4a1539d1"
   }
 ]
