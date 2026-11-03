@@ -25,7 +25,6 @@ class ZeroRotOraclePipeline:
         sources: Union[Dict[str, str], List[str]],
         api_secret: str = "AAIRE_ORACLE_COMMERCIAL_KEY"
     ) -> Dict[str, Any]:
-        # Safety check: agar test se list aaye toh use dictionary mein badal lo
         if isinstance(sources, list):
             sources = {f"source_{i+1}": url for i, url in enumerate(sources)}
 
@@ -34,7 +33,10 @@ class ZeroRotOraclePipeline:
 
         for category, url in sources.items():
             raw = self.extractor.extract_resilient_data(url)
-            has_items = raw["item_count"] > 0
+            # Safe .get() use taaki kabhi KeyError na aaye
+            item_count = raw.get("item_count", 0) if isinstance(raw, dict) else 0
+            has_items = item_count > 0
+            
             trust_score = self.reasoner.update_bayesian_belief(
                 hypothesis=category,
                 likelihood_given_true=0.96 if has_items else 0.20
@@ -43,15 +45,15 @@ class ZeroRotOraclePipeline:
             record = {
                 "feed_category": category,
                 "source_url": url,
-                "status": raw["status"],
-                "self_healed_strategy": raw["winning_strategy"],
-                "extraction_latency_ns": raw["latency_ns"],
+                "status": raw.get("status", "UNKNOWN") if isinstance(raw, dict) else "ERROR",
+                "self_healed_strategy": raw.get("winning_strategy", "fallback") if isinstance(raw, dict) else "fallback",
+                "extraction_latency_ns": raw.get("latency_ns", 0) if isinstance(raw, dict) else 0,
                 "bayesian_trust_score": trust_score,
-                "item_count": raw["item_count"],
-                "verified_payload": raw["items"]
+                "item_count": item_count,
+                "verified_payload": raw.get("items", []) if isinstance(raw, dict) else []
             }
             verified_records.append(record)
-            merkle_events.append(f"{category}:{url}:{raw['item_count']}:{trust_score}")
+            merkle_events.append(f"{category}:{url}:{item_count}:{trust_score}")
 
         block = self.blockchain.append_block(
             state_data={"sources_processed": len(sources), "timestamp": time.time()},
