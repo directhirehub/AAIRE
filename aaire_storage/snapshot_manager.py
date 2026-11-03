@@ -4,8 +4,9 @@ from __future__ import annotations
 import hashlib
 import shutil
 import tarfile
+import tempfile
 from pathlib import Path
-from typing import Dict, Any, List, Tuple
+from typing import Dict, Any, List
 
 
 class SnapshotManager:
@@ -58,16 +59,25 @@ class SnapshotManager:
         archived_count = 0
 
         if to_archive:
-            mode = "a:gz" if self.archive_path.exists() else "w:gz"
-            with tarfile.open(self.archive_path, mode) as tar:
+            with tempfile.TemporaryDirectory() as tmp_dir:
+                tmp_path = Path(tmp_dir)
+                if self.archive_path.exists():
+                    try:
+                        with tarfile.open(self.archive_path, "r:gz") as old_tar:
+                            old_tar.extractall(path=tmp_path)
+                    except Exception:
+                        pass
+
                 for snap in to_archive:
                     sha_companion = Path(f"{snap}.sha256")
-                    tar.add(snap, arcname=snap.name)
-                    snap.unlink(missing_ok=True)
+                    shutil.move(str(snap), str(tmp_path / snap.name))
                     if sha_companion.exists():
-                        tar.add(sha_companion, arcname=sha_companion.name)
-                        sha_companion.unlink(missing_ok=True)
+                        shutil.move(str(sha_companion), str(tmp_path / sha_companion.name))
                     archived_count += 1
+
+                with tarfile.open(self.archive_path, "w:gz") as new_tar:
+                    for item in tmp_path.iterdir():
+                        new_tar.add(item, arcname=item.name)
 
         return {
             "status": "HEALTHY",
@@ -75,5 +85,5 @@ class SnapshotManager:
             "archived": archived_count,
             "corrupted_purged": corrupted,
             "latest_healed": healed
-              }
-      
+        }
+        
