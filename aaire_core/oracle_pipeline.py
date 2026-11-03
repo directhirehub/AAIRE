@@ -4,7 +4,7 @@ from __future__ import annotations
 import json
 import time
 from pathlib import Path
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Union
 
 from aaire_core.mcts_reasoner import MCTSReasoner
 from aaire_network.web_scraping.auto_healer_extractor import AutoHealerExtractor
@@ -22,9 +22,13 @@ class ZeroRotOraclePipeline:
 
     def generate_verified_feed(
         self,
-        sources: Dict[str, str],
+        sources: Union[Dict[str, str], List[str]],
         api_secret: str = "AAIRE_ORACLE_COMMERCIAL_KEY"
     ) -> Dict[str, Any]:
+        # Safety check: agar test se list aaye toh use dictionary mein badal lo
+        if isinstance(sources, list):
+            sources = {f"source_{i+1}": url for i, url in enumerate(sources)}
+
         verified_records: List[Dict[str, Any]] = []
         merkle_events: List[str] = []
 
@@ -78,7 +82,6 @@ class ZeroRotOraclePipeline:
 
 if __name__ == "__main__":
     oracle = ZeroRotOraclePipeline()
-    # High-Value Live Global Targets (Tech Trends, Remote Jobs & Open Source Releases)
     live_commercial_sources = {
         "global_tech_intelligence": "https://news.ycombinator.com/",
         "remote_hiring_signals": "https://remoteok.com/",
