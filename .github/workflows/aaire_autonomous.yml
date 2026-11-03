@@ -7,6 +7,10 @@ on:
   schedule:
     - cron: '0 */6 * * *'
 
+concurrency:
+  group: aaire-autonomous-sync
+  cancel-in-progress: true
+
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
@@ -48,8 +52,13 @@ jobs:
       - name: 6. Auto-Save Memory, Oracle Feed & Backups to aaire_storage
         run: |
           find aaire_storage -name "__pycache__" -type d -exec rm -rf {} +
+          cp -r aaire_storage /tmp/aaire_storage_sync
+          git fetch origin main
+          git reset --hard origin/main
+          rm -rf aaire_storage
+          mv /tmp/aaire_storage_sync aaire_storage
           git config --local user.email "aaire-bot@users.noreply.github.com"
           git config --local user.name "AAIRE Autonomous Bot"
           git add aaire_storage/
-          git diff --staged --quiet || (git commit -m "Auto-Sync: AAIRE Zero-Rot Oracle Feed & Compact Vault" && git push)
+          git diff --staged --quiet || (git commit -m "Auto-Sync: AAIRE Zero-Rot Oracle Feed & Compact Vault" && git push origin HEAD:main)
           
