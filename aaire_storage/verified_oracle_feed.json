@@ -1,0 +1,33 @@
+{
+  "oracle_version": "AAIRE-v7.0-ZeroRot-Enterprise",
+  "generated_at_utc": 1793667644.15,
+  "cryptographic_proof": {
+    "merkle_block_index": 28,
+    "merkle_root": "aba4b24031ed887382679bb68fbfb69fd1e6cef0432f07b42ecbcf2cbec405b1",
+    "block_hash": "010d62566b84b61e7a5cd9875193e61f0a281e3377532d90e43c95bcdf788444",
+    "hmac_sha256_signature": "c60f91652ffaa6e8ae21385d72ac5c25140aaec16845c26102211aba06620680"
+  },
+  "total_sources": 2,
+  "feeds": [
+    {
+      "source_url": "https://httpbin.org/html",
+      "status": "HEALED_AND_EXTRACTED",
+      "self_healed_strategy": "strategy_hybrid_merge",
+      "extraction_latency_ns": 11157,
+      "bayesian_trust_score": 0.9048,
+      "item_count": 1,
+      "verified_payload": [
+        "Herman Melville - Moby-Dick"
+      ]
+    },
+    {
+      "source_url": "https://httpbin.org/links/5/0",
+      "status": "HEALED_AND_EXTRACTED",
+      "self_healed_strategy": "strategy_hybrid_merge",
+      "extraction_latency_ns": 16072,
+      "bayesian_trust_score": 0.6667,
+      "item_count": 0,
+      "verified_payload": []
+    }
+  ]
+}
