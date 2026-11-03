@@ -1,12 +1,12 @@
 {
   "oracle_version": "AAIRE-v7.0-ZeroRot-Enterprise",
-  "generated_at_utc": 1793697697.744,
+  "generated_at_utc": 1793698199.723,
   "monetization_ready": true,
   "cryptographic_proof": {
     "merkle_block_index": 58,
     "merkle_root": "c0415b346e90a4fb75eecae861700db67d26b4a862afd86cc7c8cce1286a16d8",
-    "block_hash": "a2173390edb80d4642526fa540f1bbd115c6ab55ac641f872e6374422bc98a89",
-    "hmac_sha256_signature": "ed15c9ad16993071588a11841079083a91502d16bbc84043974ae6165a47812d"
+    "block_hash": "c60418158dedb67d1a52fd09464092bddc08048874a3b565f2b3645c165f0884",
+    "hmac_sha256_signature": "024f25f83dfc144c5191b2e95754e73084d663c3d843e6703078106565bfea2c"
   },
   "total_sources": 3,
   "feeds": [
@@ -15,7 +15,7 @@
       "source_url": "https://news.ycombinator.com/",
       "status": "HEALED_AND_EXTRACTED",
       "self_healed_strategy": "strategy_hybrid_merge",
-      "extraction_latency_ns": 16884,
+      "extraction_latency_ns": 31359,
       "bayesian_trust_score": 0.9057,
       "item_count": 25,
       "verified_payload": [
@@ -34,15 +34,15 @@
         "https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you",
         "https://cornfieldlabs.github.io/posts/ublock-stop-techcrunch-autoplay-video/post.html",
         "https://arxiv.org/abs/2608.25820",
-        "https://margeux.com/rb338.html",
         "https://momentic.ai/",
+        "https://margeux.com/rb338.html",
         "https://p.migdal.pl/warsaw-vibe-voxel/",
         "https://lowendspirit.com/discussion/11543/shrinking-nixos-ram-footprint-and-resource-requirements-to-the-bare-minimum",
         "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
         "https://www6.slac.stanford.edu/news/2026-10-29-slac-researchers-find-proof-altermagnetism-new-magnetic-phase",
-        "https://www.psiquantum.com/news-import/psiquantum-unveils-optical-circuit-switch-technology-built-on-advanced-low-loss-silicon-photonics-platform",
         "https://hjkl.duy.run",
-        "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/",
+        "https://www.psiquantum.com/news-import/psiquantum-unveils-optical-circuit-switch-technology-built-on-advanced-low-loss-silicon-photonics-platform",
+        "https://polyend.com/whats-up/tracker-the-biggest-update-yet/",
         "https://www.cloudflarestatus.com/"
       ]
     },
@@ -61,7 +61,7 @@
       "source_url": "https://pypi.org/",
       "status": "HEALED_AND_EXTRACTED",
       "self_healed_strategy": "strategy_hybrid_merge",
-      "extraction_latency_ns": 19176,
+      "extraction_latency_ns": 30086,
       "bayesian_trust_score": 0.9057,
       "item_count": 25,
       "verified_payload": [

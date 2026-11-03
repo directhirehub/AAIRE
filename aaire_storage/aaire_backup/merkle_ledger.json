@@ -415,11 +415,11 @@
   },
   {
     "index": 46,
-    "version_tag": "20261103_092137",
-    "timestamp": "2026-11-03T09:21:37.117334+00:00",
-    "snapshot_file": "state_snapshot_20261103_092137.json",
-    "snapshot_sha256": "f843a058463b5d4ec7bec64c63a5373a645d4126ecaec1eca1bcdca1e2d1703a",
+    "version_tag": "20261103_092959",
+    "timestamp": "2026-11-03T09:29:59.066673+00:00",
+    "snapshot_file": "state_snapshot_20261103_092959.json",
+    "snapshot_sha256": "08e503cea0b6046708c79b62f471e74209db4eeace6460b54de0b71a7ca81faf",
     "prev_merkle_root": "1ade302c8708e08c4bd86965f4efdc8b6ddcf9ed64757e066ec1e64a0813bae5",
-    "merkle_root": "92c1474e7e3f11259a5979e5608ee70219e81154dd987cba5e80ea09a9c35903"
+    "merkle_root": "0921a6ba1ec0a5bcb24b2b6a7729b22fe17e0cbe70384bd03ea671259e855575"
   }
 ]
