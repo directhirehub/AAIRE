@@ -4,11 +4,11 @@ on:
   push:
     branches: [ main ]
   workflow_dispatch:
-    inputs:
-      custom_goal:
-        description: 'AAIRE Master Brain ke liye Goal likhein'
-        required: false
-        default: 'Execute autonomous self-optimization and heuristic pattern learning'
+  schedule:
+    - cron: '0 */6 * * *'
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 permissions:
   contents: write
@@ -16,7 +16,6 @@ permissions:
 jobs:
   run-aaire-brain:
     runs-on: ubuntu-latest
-
     steps:
       - name: 1. Checkout AAIRE Repository
         uses: actions/checkout@v4
@@ -26,26 +25,28 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: 3. Run Layer-3 Unit Tests (Sandbox Verification)
-        run: python3 aaire_tests/test_local_agent.py
-
-      - name: 4. Execute AAIRE v4.1 Master Brain (Live Memory Generation)
+      - name: 3. Run Layer 3 Unit, Network & Singularity Tests
         run: |
-          GOAL="${{ github.event.inputs.custom_goal || 'Execute autonomous self-optimization and heuristic pattern learning' }}"
-          python3 aaire_core/local_agent.py --goal "$GOAL"
+          export PYTHONPATH=$PYTHONPATH:.
+          python3 aaire_tests/test_local_agent.py
+          python3 aaire_tests/test_network_integration.py
+          python3 aaire_tests/test_hyper_singularity.py
+
+      - name: 4. Execute AAIRE Master Brain & Singularity Orchestrator
+        run: |
+          export PYTHONPATH=$PYTHONPATH:.
+          python3 aaire_core/local_agent.py
+          python3 aaire_core/master_orchestrator.py
 
       - name: 5. Verify Cryptographic Merkle State Ledger
-        run: python3 aaire_core/local_agent.py --verify-ledger
+        run: |
+          export PYTHONPATH=$PYTHONPATH:.
+          python3 -c "from aaire_storage.merkle_blockchain import MerkleBlockchainVault; assert MerkleBlockchainVault().verify_chain(), 'Chain Invalid!'; print('Merkle Blockchain Verified!')"
 
       - name: 6. Auto-Save Memory & Backups to aaire_storage
         run: |
-          git config user.name "AAIRE-Autonomous-Bot"
-          git config user.email "aaire-bot@users.noreply.github.com"
+          git config --local user.email "aaire-bot@users.noreply.github.com"
+          git config --local user.name "AAIRE Autonomous Bot"
           git add aaire_storage/
-          if git diff --staged --quiet; then
-            echo "No new memory changes to commit."
-          else
-            git commit -m "Auto-Sync: AAIRE v4.1 Memory, Merkle Ledger & Learned Patterns"
-            git push
-          fi
+          git diff --staged --quiet || (git commit -m "Auto-Sync: AAIRE Singularity State & Compact Vault" && git push)
           
