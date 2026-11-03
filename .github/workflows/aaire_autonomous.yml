@@ -25,28 +25,31 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: 3. Run Layer 3 Unit, Network & Singularity Tests
+      - name: 3. Run Layer 3 Unit, Network, Singularity & Oracle Tests
         run: |
           export PYTHONPATH=$PYTHONPATH:.
           python3 aaire_tests/test_local_agent.py
           python3 aaire_tests/test_network_integration.py
           python3 aaire_tests/test_hyper_singularity.py
+          python3 aaire_tests/test_zero_rot_oracle.py
 
-      - name: 4. Execute AAIRE Master Brain & Singularity Orchestrator
+      - name: 4. Execute AAIRE Master Brain, Orchestrator & Commercial Oracle
         run: |
           export PYTHONPATH=$PYTHONPATH:.
           python3 aaire_core/local_agent.py
           python3 aaire_core/master_orchestrator.py
+          python3 aaire_core/oracle_pipeline.py
 
       - name: 5. Verify Cryptographic Merkle State Ledger
         run: |
           export PYTHONPATH=$PYTHONPATH:.
           python3 -c "from aaire_storage.merkle_blockchain import MerkleBlockchainVault; assert MerkleBlockchainVault().verify_chain(), 'Chain Invalid!'; print('Merkle Blockchain Verified!')"
 
-      - name: 6. Auto-Save Memory & Backups to aaire_storage
+      - name: 6. Auto-Save Memory, Oracle Feed & Backups to aaire_storage
         run: |
+          find aaire_storage -name "__pycache__" -type d -exec rm -rf {} +
           git config --local user.email "aaire-bot@users.noreply.github.com"
           git config --local user.name "AAIRE Autonomous Bot"
           git add aaire_storage/
-          git diff --staged --quiet || (git commit -m "Auto-Sync: AAIRE Singularity State & Compact Vault" && git push)
+          git diff --staged --quiet || (git commit -m "Auto-Sync: AAIRE Zero-Rot Oracle Feed & Compact Vault" && git push)
           
