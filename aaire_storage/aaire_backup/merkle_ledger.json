@@ -1,543 +1,533 @@
-{
-  "oracle_version": "AAIRE-v10.0-REA-50X-Autonomous",
-  "generated_at_utc": 1793830250.329,
-  "monetization_ready": true,
-  "cryptographic_proof": {
-    "merkle_block_index": 100,
-    "merkle_root": "499a4ce6d5c8d82ad76e689c73546c1d6c58d6fdc62d44f223855c3584d3911a",
-    "block_hash": "11c025ab438591257be1e214f47eca5626837da45a1b995a0703c57e2b1a1d2b",
-    "hmac_sha256_signature": "1b85b4b6c613b5da24dbc75bb79abcf78658a0f491e7e8a8c5cce87aa842cb20"
+[
+  {
+    "index": 0,
+    "version_tag": "20261102_094816",
+    "timestamp": "2026-11-02T09:48:16.191437+00:00",
+    "snapshot_file": "state_snapshot_20261102_094816.json",
+    "snapshot_sha256": "8055ce070dccb1459a42edb2f80a44f68eb8f8004bb528caee87d8f2ee326542",
+    "prev_merkle_root": "0000000000000000000000000000000000000000000000000000000000000000",
+    "merkle_root": "19e07b70cd646a9b503e4c93ebd7e17a045f97fee7b52ae25f8e9ef42ead3e63"
   },
-  "total_sources": 5,
-  "total_retained_facts": 74,
-  "feeds": [
-    {
-      "feed_category": "global_tech_intelligence",
-      "source_url": "https://news.ycombinator.com/rss",
-      "status": "HEALED_AND_EXTRACTED",
-      "self_healed_strategy": "rea_50x_polyglot_surface",
-      "extraction_latency_ms": 64.49,
-      "discovered_routes": [
-        "https://news.ycombinator.com/item?id=50347425",
-        "https://news.ycombinator.com/item?id=50362905",
-        "https://news.ycombinator.com/item?id=50362980",
-        "https://news.ycombinator.com/item?id=50363019",
-        "https://news.ycombinator.com/item?id=50363378",
-        "https://news.ycombinator.com/item?id=50363461",
-        "https://news.ycombinator.com/item?id=50364336",
-        "https://news.ycombinator.com/item?id=50365755",
-        "https://news.ycombinator.com/item?id=50365780",
-        "https://news.ycombinator.com/item?id=50366522",
-        "https://news.ycombinator.com/item?id=50366863",
-        "https://news.ycombinator.com/item?id=50366919"
-      ],
-      "item_count": 25,
-      "retained_facts": [
-        {
-          "fact_text": "Residential proxies detected on White House network",
-          "source_url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Insects don&#x27;t swarm at LED lights",
-          "source_url": "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
-          "source_url": "https://www.ricursive.com/ripple",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "AI is forcing us to pay off 40 years of technical debt",
-          "source_url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "A new Go API for JSON",
-          "source_url": "https://go.dev/blog/jsonv2",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB&#x2F;s",
-          "source_url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Progress on provable inference for large language models",
-          "source_url": "https://www.anthropic.com/research/provable-inference",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
-          "source_url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Show HN: After a decade of reversing, I got co-op working in DOS Wing Commander",
-          "source_url": "https://fireflyk64.github.io/wcmulti/",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Conductor Is Joining Meta",
-          "source_url": "https://www.conductor.build/announcement",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Launch HN: Kino AI (YC S23) – AI media manager and video editor",
-          "source_url": "https://news.ycombinator.com/item?id=50368804",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "OpenAI to acquire Pierre Computer Company",
-          "source_url": "https://openai.com/index/openai-to-acquire-pierre/",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Ask HN: What Cryptography book do you recommend for reading with 10 year olds?",
-          "source_url": "https://news.ycombinator.com/item?id=50347425",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Tencent Hy4",
-          "source_url": "https://hy.tencent.ai/research/hy4",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "AMD expects to outsell Intel in Q4 for the first time in history",
-          "source_url": "https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "North Korean fake job interview led to $6.3B Binance heist",
-          "source_url": "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Verification Is Not Knowledge: Science needs more than answers",
-          "source_url": "https://blog.cosmos-institute.org/p/verification-is-not-knowledge",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Incident with Pull Requests, Git Operations and Issues",
-          "source_url": "https://www.githubstatus.com/incidents/smtdswd1h2w4",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Show HN: I built a tool that prices a prebuilt PC part by part",
-          "source_url": "https://pcdealcheck.com/",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)",
-          "source_url": "https://news.ycombinator.com/item?id=50363461",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Kimi K3.1 Pro model weights are out",
-          "source_url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "If you&#x27;re on Replit Pro, you have until November 8 to opt out of arbitration",
-          "source_url": "https://readthediff.substack.com/p/replit-pro-arbitration-opt-out-november-8",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Have I befriended a murderer?",
-          "source_url": "https://longreads.com/2026/11/03/murder-friendship-doubt/",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Guerrilla bike lanes: San Francisco makes illicit infrastructure permanent (2016)",
-          "source_url": "https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Evergreen: A Provably Safe Systems Language",
-          "source_url": "https://evergreenlang.net",
-          "category": "global_tech_intelligence"
-        }
-      ],
-      "verified_payload": [
-        "https://layer3intel.com/blog/residential-proxies-white-house-network",
-        "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
-        "https://www.ricursive.com/ripple",
-        "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
-        "https://go.dev/blog/jsonv2",
-        "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
-        "https://www.anthropic.com/research/provable-inference",
-        "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
-        "https://fireflyk64.github.io/wcmulti/",
-        "https://www.conductor.build/announcement",
-        "https://news.ycombinator.com/item?id=50368804",
-        "https://openai.com/index/openai-to-acquire-pierre/",
-        "https://news.ycombinator.com/item?id=50347425",
-        "https://hy.tencent.ai/research/hy4",
-        "https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections",
-        "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398",
-        "https://blog.cosmos-institute.org/p/verification-is-not-knowledge",
-        "https://www.githubstatus.com/incidents/smtdswd1h2w4",
-        "https://pcdealcheck.com/",
-        "https://news.ycombinator.com/item?id=50363461"
-      ],
-      "bayesian_trust_score": 0.99
-    },
-    {
-      "feed_category": "global_tech_intelligence",
-      "source_url": "https://hnrss.org/newest?points=50",
-      "status": "HEALED_AND_EXTRACTED",
-      "self_healed_strategy": "rea_50x_polyglot_surface",
-      "extraction_latency_ms": 484.28,
-      "discovered_routes": [
-        "http://purl.org/dc/elements/1.1/",
-        "http://www.w3.org/2005/Atom",
-        "https://blog.kagi.com/education-should-not-be-held-for-ransom",
-        "https://fireflyk64.github.io/wcmulti/",
-        "https://go.dev/blog/jsonv2",
-        "https://hnrss.org/newest?points=50",
-        "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-        "https://kino.ai",
-        "https://kino.ai/launch-video",
-        "https://kino.ai/walkthrough-video",
-        "https://ladybird.org/newsletter/2026-10-31/",
-        "https://layer3intel.com/blog/residential-proxies-white-house-network"
-      ],
-      "item_count": 25,
-      "retained_facts": [
-        {
-          "fact_text": "Everything is an AI scam now",
-          "source_url": "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Residential proxies detected on White House network",
-          "source_url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
-          "source_url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Insects don't swarm at LED lights",
-          "source_url": "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
-          "source_url": "https://www.ricursive.com/ripple",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Show HN: After a decade of reversing, I got co-op working in DOS Wing Commander",
-          "source_url": "https://fireflyk64.github.io/wcmulti/",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Conductor is joining Meta",
-          "source_url": "https://www.conductor.build/changelog/0.93.0-conductor-is-joining-meta",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Have I befriended a murderer?",
-          "source_url": "https://longreads.com/2026/11/03/murder-friendship-doubt/",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Education shouldn't be held for ransom",
-          "source_url": "https://blog.kagi.com/education-should-not-be-held-for-ransom",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Conductor Is Joining Meta",
-          "source_url": "https://www.conductor.build/announcement",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "This Month in Ladybird – October 2026",
-          "source_url": "https://ladybird.org/newsletter/2026-10-31/",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "BYD doubles its Brazil market share to 9.7% a year after opening its local plant",
-          "source_url": "https://www.bloomberg.com/news/articles/2026-11-03/china-s-byd-doubles-market-share-in-brazil-with-new-plant-eyed",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "A new Go API for JSON",
-          "source_url": "https://go.dev/blog/jsonv2",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Launch HN: Kino AI (YC S23) – AI media manager and video editor",
-          "source_url": "https://news.ycombinator.com/item?id=50368804",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Progress on provable inference for large language models",
-          "source_url": "https://www.anthropic.com/research/provable-inference",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "'It's just vape, nail, charity shops': Can anything save UK high street?",
-          "source_url": "https://www.theguardian.com/business/2026/nov/04/what-can-save-the-british-high-street-rotherham",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "AMD expects to outsell Intel in Q4 for the first time in history",
-          "source_url": "https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "AI data centers comprehensively defeated at US midterm elections",
-          "source_url": "https://www.tomshardware.com/tech-industry/data-centers/ai-data-centers-comprehensively-defeated-at-us-midterm-elections-45-measures-put-on-the-ballot-as-americans-overwhelmingly-vote-against-developments",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Kimi K3.1 Pro model weights are out",
-          "source_url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "YC's Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
-          "source_url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Article URL: https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/",
-          "source_url": "https://hnrss.org/newest?points=50",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "https://news.ycombinator.com/item?id=50371508",
-          "source_url": "https://news.ycombinator.com/item?id=50371508",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "https://layer3intel.com/blog/residential-proxies-white-house-network",
-          "source_url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "https://news.ycombinator.com/item?id=50371246",
-          "source_url": "https://news.ycombinator.com/item?id=50371246",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
-          "source_url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
-          "category": "global_tech_intelligence"
-        }
-      ],
-      "verified_payload": [
-        "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/",
-        "https://layer3intel.com/blog/residential-proxies-white-house-network",
-        "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
-        "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
-        "https://www.ricursive.com/ripple",
-        "https://fireflyk64.github.io/wcmulti/",
-        "https://www.conductor.build/changelog/0.93.0-conductor-is-joining-meta",
-        "https://longreads.com/2026/11/03/murder-friendship-doubt/",
-        "https://blog.kagi.com/education-should-not-be-held-for-ransom",
-        "https://www.conductor.build/announcement",
-        "https://ladybird.org/newsletter/2026-10-31/",
-        "https://www.bloomberg.com/news/articles/2026-11-03/china-s-byd-doubles-market-share-in-brazil-with-new-plant-eyed",
-        "https://go.dev/blog/jsonv2",
-        "https://news.ycombinator.com/item?id=50368804",
-        "https://www.anthropic.com/research/provable-inference",
-        "https://www.theguardian.com/business/2026/nov/04/what-can-save-the-british-high-street-rotherham",
-        "https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections",
-        "https://www.tomshardware.com/tech-industry/data-centers/ai-data-centers-comprehensively-defeated-at-us-midterm-elections-45-measures-put-on-the-ballot-as-americans-overwhelmingly-vote-against-developments",
-        "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-        "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/"
-      ],
-      "bayesian_trust_score": 0.99
-    },
-    {
-      "feed_category": "verified_job_openings",
-      "source_url": "https://remoteok.com/api",
-      "status": "HEALED_AND_EXTRACTED",
-      "self_healed_strategy": "rea_50x_polyglot_surface",
-      "extraction_latency_ms": 841.56,
-      "discovered_routes": [],
-      "item_count": 24,
-      "retained_facts": [
-        {
-          "fact_text": "M&A Praktikum Intern",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-ma-praktikum-intern-vogel-1137677",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "Paid Media Manager US",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-paid-media-manager-us-kyra-1137675",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "Sales Operations Analyst",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-sales-operations-analyst-calabrio-1137674",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "Tech lead",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-tech-lead-ringbook-limited-1137673",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "Senior Property Manager ENG",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-senior-property-manager-eng-staffright-1137624",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "Tax Manager Private Client",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-tax-manager-private-client-aprio-1137622",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "Client Accounting Division Manager",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-client-accounting-division-manager-burkland-associates-1137621",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "AI ML Engineer",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-ai-ml-engineer-docusketch-1137619",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "Software Engineer Infrastructure",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-software-engineer-infrastructure-sodalis-inc-1137614",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "Team Lead Account Executive",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-team-lead-account-executive-capmo-1137613",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "Virtual Destination Wedding Coordinator",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-virtual-destination-wedding-coordinator-destination-careers-1137611",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "Partner Operations Manager",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-partner-operations-manager-mecka-1137609",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "Scientific Account Executive",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-scientific-account-executive-adaptyv-1137608",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "Contract Recruiter",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-contract-recruiter-cai-1137607",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "AWS Cloud Solutions Architect",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-aws-cloud-solutions-architect-cloudary-sas-1137606",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "Online Client Support &amp; Travel Booking We Will Train You",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-online-client-support-amp-travel-booking-we-will-train-you-destination-careers-1137604",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "Country Manager Canada",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-country-manager-canada-polaroid-1137602",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "Client Support &amp; Travel Booking Online",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-client-support-amp-travel-booking-online-destination-careers-1137601",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "Cloud Engineer Automation",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-cloud-engineer-automation-smile-digital-health-1137600",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "Front End Developer",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-front-end-developer-edconic-1137597",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "Account Executive",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-account-executive-huzzle-1137573",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "Senior Software Engineer LATAM",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-latam-wagmo-1137572",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "Senior Software Engineer",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-klardaten-1137571",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "Solutions Engineer",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-solutions-engineer-onebrief-1137568",
-          "category": "verified_job_openings"
-        }
-      ],
-      "verified_payload": [
-        "https://remoteOK.com/remote-jobs/remote-ma-praktikum-intern-vogel-1137677",
-        "https://remoteOK.com/remote-jobs/remote-paid-media-manager-us-kyra-1137675",
-        "https://remoteOK.com/remote-jobs/remote-sales-operations-analyst-calabrio-1137674",
-        "https://remoteOK.com/remote-jobs/remote-tech-lead-ringbook-limited-1137673",
-        "https://remoteOK.com/remote-jobs/remote-senior-property-manager-eng-staffright-1137624",
-        "https://remoteOK.com/remote-jobs/remote-tax-manager-private-client-aprio-1137622",
-        "https://remoteOK.com/remote-jobs/remote-client-accounting-division-manager-burkland-associates-1137621",
-        "https://remoteOK.com/remote-jobs/remote-ai-ml-engineer-docusketch-1137619",
-        "https://remoteOK.com/remote-jobs/remote-software-engineer-infrastructure-sodalis-inc-1137614",
-        "https://remoteOK.com/remote-jobs/remote-team-lead-account-executive-capmo-1137613",
-        "https://remoteOK.com/remote-jobs/remote-virtual-destination-wedding-coordinator-destination-careers-1137611",
-        "https://remoteOK.com/remote-jobs/remote-partner-operations-manager-mecka-1137609",
-        "https://remoteOK.com/remote-jobs/remote-scientific-account-executive-adaptyv-1137608",
-        "https://remoteOK.com/remote-jobs/remote-contract-recruiter-cai-1137607",
-        "https://remoteOK.com/remote-jobs/remote-aws-cloud-solutions-architect-cloudary-sas-1137606",
-        "https://remoteOK.com/remote-jobs/remote-online-client-support-amp-travel-booking-we-will-train-you-destination-careers-1137604",
-        "https://remoteOK.com/remote-jobs/remote-country-manager-canada-polaroid-1137602",
-        "https://remoteOK.com/remote-jobs/remote-client-support-amp-travel-booking-online-destination-careers-1137601",
-        "https://remoteOK.com/remote-jobs/remote-cloud-engineer-automation-smile-digital-health-1137600",
-        "https://remoteOK.com/remote-jobs/remote-front-end-developer-edconic-1137597"
-      ],
-      "bayesian_trust_score": 0.96
-    },
-    {
-      "feed_category": "verified_job_openings",
-      "source_url": "https://www.arbeitnow.com/api/job-board-api",
-      "status": "EMPTY",
-      "self_healed_strategy": "rea_50x_polyglot_surface",
-      "extraction_latency_ms": 183.71,
-      "discovered_routes": [],
-      "item_count": 0,
-      "retained_facts": [],
-      "verified_payload": [],
-      "bayesian_trust_score": 0.25
-    },
-    {
-      "feed_category": "autonomous_ai_research",
-      "source_url": "https://arxiv.org/rss/cs.AI",
-      "status": "EMPTY",
-      "self_healed_strategy": "rea_50x_polyglot_surface",
-      "extraction_latency_ms": 364.97,
-      "discovered_routes": [
-        "http://arxiv.org/schemas/atom",
-        "http://purl.org/dc/elements/1.1/",
-        "http://purl.org/rss/1.0/modules/content/",
-        "http://rss.arxiv.org/rss/cs.AI",
-        "http://www.w3.org/2005/Atom"
-      ],
-      "item_count": 0,
-      "retained_facts": [],
-      "verified_payload": [],
-      "bayesian_trust_score": 0.25
-    }
-  ]
-}
+  {
+    "index": 1,
+    "version_tag": "20261102_105231",
+    "timestamp": "2026-11-02T10:52:31.163704+00:00",
+    "snapshot_file": "state_snapshot_20261102_105231.json",
+    "snapshot_sha256": "53febe52c4f25765611b43ac98deb9ad2dea56dabc8eb817a2d90fd828566981",
+    "prev_merkle_root": "19e07b70cd646a9b503e4c93ebd7e17a045f97fee7b52ae25f8e9ef42ead3e63",
+    "merkle_root": "b57e13a6ddf0667bda88993ed01a8aabed7149912d4a72304e884547b5dd82b8"
+  },
+  {
+    "index": 2,
+    "version_tag": "20261102_105539",
+    "timestamp": "2026-11-02T10:55:39.756927+00:00",
+    "snapshot_file": "state_snapshot_20261102_105539.json",
+    "snapshot_sha256": "35ae43ab51776f8328dcdec10e65807a53b097b0917a87e59924d5325085f2ce",
+    "prev_merkle_root": "b57e13a6ddf0667bda88993ed01a8aabed7149912d4a72304e884547b5dd82b8",
+    "merkle_root": "5775edd0684dd764bbf79bc7ddca9fd04f3b0d63ce8ad10af3c4ede85f3282ff"
+  },
+  {
+    "index": 3,
+    "version_tag": "20261102_105820",
+    "timestamp": "2026-11-02T10:58:20.820508+00:00",
+    "snapshot_file": "state_snapshot_20261102_105820.json",
+    "snapshot_sha256": "ea2457d7d7adedfb38e822d2d1a05a2c32fbbcc628f1e780e66d8aaa44e613fb",
+    "prev_merkle_root": "5775edd0684dd764bbf79bc7ddca9fd04f3b0d63ce8ad10af3c4ede85f3282ff",
+    "merkle_root": "52ab21c24a4a7037d6472cebb03d66e0cd598beff39f7d2bd3f585b3c5f60e1f"
+  },
+  {
+    "index": 4,
+    "version_tag": "20261102_110108",
+    "timestamp": "2026-11-02T11:01:08.867983+00:00",
+    "snapshot_file": "state_snapshot_20261102_110108.json",
+    "snapshot_sha256": "93ebf574a29662989094c2f5284b9a9fe9d086db6c36b792201afc61bef5bc58",
+    "prev_merkle_root": "52ab21c24a4a7037d6472cebb03d66e0cd598beff39f7d2bd3f585b3c5f60e1f",
+    "merkle_root": "e7414cd78bfef021c9910886dbd6ccbeb4a8faa8362dc7c55e47199707d75491"
+  },
+  {
+    "index": 5,
+    "version_tag": "20261102_110241",
+    "timestamp": "2026-11-02T11:02:41.650413+00:00",
+    "snapshot_file": "state_snapshot_20261102_110241.json",
+    "snapshot_sha256": "4e67425454accaff6335dfea831d4d5bc1ae6a0131e1c61d6674c976bb7258ce",
+    "prev_merkle_root": "e7414cd78bfef021c9910886dbd6ccbeb4a8faa8362dc7c55e47199707d75491",
+    "merkle_root": "dbd630ab1003378bc535bb4de7d14c489902e22a2e2ccf45f943f67ac4ec60c1"
+  },
+  {
+    "index": 6,
+    "version_tag": "20261102_110901",
+    "timestamp": "2026-11-02T11:09:01.303394+00:00",
+    "snapshot_file": "state_snapshot_20261102_110901.json",
+    "snapshot_sha256": "786ebe26052384ed339c228b9b22b3f92c4f34e881d0d4c36f7875b3186b3b20",
+    "prev_merkle_root": "dbd630ab1003378bc535bb4de7d14c489902e22a2e2ccf45f943f67ac4ec60c1",
+    "merkle_root": "626d7b9f9608f8a4189b1b3b8ff81ba828ffa41344c3be3d0264b6edf79c4ac2"
+  },
+  {
+    "index": 7,
+    "version_tag": "20261102_110948",
+    "timestamp": "2026-11-02T11:09:48.663955+00:00",
+    "snapshot_file": "state_snapshot_20261102_110948.json",
+    "snapshot_sha256": "24db597af31d1f4ffe228cc8963371b1036ef396d4d51e23f20e5db7009f8bae",
+    "prev_merkle_root": "626d7b9f9608f8a4189b1b3b8ff81ba828ffa41344c3be3d0264b6edf79c4ac2",
+    "merkle_root": "4b54a3ee18f943add156cbc920d3c84e17715170f56109e5aaf4244db250e5a0"
+  },
+  {
+    "index": 8,
+    "version_tag": "20261102_111112",
+    "timestamp": "2026-11-02T11:11:12.405539+00:00",
+    "snapshot_file": "state_snapshot_20261102_111112.json",
+    "snapshot_sha256": "00e5380c79e975118d065c9cec76d849fd78df28371f1dec4c429a92a96f5de6",
+    "prev_merkle_root": "4b54a3ee18f943add156cbc920d3c84e17715170f56109e5aaf4244db250e5a0",
+    "merkle_root": "3cbc1b8d49c4e71af0668ec1a7f953c7fad357b05d11956529336b52d639d50c"
+  },
+  {
+    "index": 9,
+    "version_tag": "20261102_111152",
+    "timestamp": "2026-11-02T11:11:52.327528+00:00",
+    "snapshot_file": "state_snapshot_20261102_111152.json",
+    "snapshot_sha256": "a6de172c7fc3a2a6e02632753b2b595a40a022390575a3e88c9dfb2859f47d57",
+    "prev_merkle_root": "3cbc1b8d49c4e71af0668ec1a7f953c7fad357b05d11956529336b52d639d50c",
+    "merkle_root": "f7571a5498eefac3b1530c411bd0ecd8f5a00d11272f8c35d98b76c488b8fc9b"
+  },
+  {
+    "index": 10,
+    "version_tag": "20261102_111503",
+    "timestamp": "2026-11-02T11:15:03.327007+00:00",
+    "snapshot_file": "state_snapshot_20261102_111503.json",
+    "snapshot_sha256": "0978e1e6f9aa995492ab7caca16c6c2dfb5bed0c797d7340977fb40e45d7ea0f",
+    "prev_merkle_root": "f7571a5498eefac3b1530c411bd0ecd8f5a00d11272f8c35d98b76c488b8fc9b",
+    "merkle_root": "a8077f3caa55381f7923f599c65ca063ee2551905f1bb3b9b796353bf0a33317"
+  },
+  {
+    "index": 11,
+    "version_tag": "20261102_111552",
+    "timestamp": "2026-11-02T11:15:52.890761+00:00",
+    "snapshot_file": "state_snapshot_20261102_111552.json",
+    "snapshot_sha256": "a5fb185ec6538af38ec59cfc905b0bc4c7ce3ffa84d0f7fda8007c6e45f8b4ba",
+    "prev_merkle_root": "a8077f3caa55381f7923f599c65ca063ee2551905f1bb3b9b796353bf0a33317",
+    "merkle_root": "0c4257fd6ba733117ac8c0632e56712e74718df84f793b02c8b5fb39a3130c51"
+  },
+  {
+    "index": 12,
+    "version_tag": "20261102_111725",
+    "timestamp": "2026-11-02T11:17:25.092187+00:00",
+    "snapshot_file": "state_snapshot_20261102_111725.json",
+    "snapshot_sha256": "538a49931aece4424481f4a3e3652eb65fbe95c0a13cf4a1a256b35cd2009836",
+    "prev_merkle_root": "0c4257fd6ba733117ac8c0632e56712e74718df84f793b02c8b5fb39a3130c51",
+    "merkle_root": "3afa3d12e3c6b590fbd5e62be1dcce28bb981e8c721ade61ffd84c2dfb619a19"
+  },
+  {
+    "index": 13,
+    "version_tag": "20261102_111802",
+    "timestamp": "2026-11-02T11:18:02.871598+00:00",
+    "snapshot_file": "state_snapshot_20261102_111802.json",
+    "snapshot_sha256": "3307df0022b41cb53dd2e83fc0542d33e37b30e68ad0802a24805ed2c111ec2f",
+    "prev_merkle_root": "3afa3d12e3c6b590fbd5e62be1dcce28bb981e8c721ade61ffd84c2dfb619a19",
+    "merkle_root": "c95eef2a2600fac8962dbd3b5347435db5d5488ce313781d9aba240d36aa892f"
+  },
+  {
+    "index": 14,
+    "version_tag": "20261102_112335",
+    "timestamp": "2026-11-02T11:23:35.865799+00:00",
+    "snapshot_file": "state_snapshot_20261102_112335.json",
+    "snapshot_sha256": "277a302382f6aca8724ecac590ea6277c015d5b73c06050cd2e7a3bfa33309a1",
+    "prev_merkle_root": "c95eef2a2600fac8962dbd3b5347435db5d5488ce313781d9aba240d36aa892f",
+    "merkle_root": "53b37f549b0616b7473af6e120c76eaa01f8f4ac7cb56d470d9a5a4ceb45730e"
+  },
+  {
+    "index": 15,
+    "version_tag": "20261102_112854",
+    "timestamp": "2026-11-02T11:28:54.142566+00:00",
+    "snapshot_file": "state_snapshot_20261102_112854.json",
+    "snapshot_sha256": "18d56d2031dc258a4c0d84683b5740ade0a3318e83310e6a033165131a1cb97a",
+    "prev_merkle_root": "53b37f549b0616b7473af6e120c76eaa01f8f4ac7cb56d470d9a5a4ceb45730e",
+    "merkle_root": "11de298ef07a4b92c60855d097c40263845dad94bc5d02d8b99048f6340c3723"
+  },
+  {
+    "index": 16,
+    "version_tag": "20261102_231719",
+    "timestamp": "2026-11-02T23:17:19.274951+00:00",
+    "snapshot_file": "state_snapshot_20261102_231719.json",
+    "snapshot_sha256": "229e6c595ca0fcad06ef9578bd586254bdf8b6776232ea9e1af20ac67c42bbc8",
+    "prev_merkle_root": "11de298ef07a4b92c60855d097c40263845dad94bc5d02d8b99048f6340c3723",
+    "merkle_root": "ba76d7aa9edbc9b4d4539b00e2150cc5095dcdcca56bbde9af9015556da6f51e"
+  },
+  {
+    "index": 17,
+    "version_tag": "20261102_231854",
+    "timestamp": "2026-11-02T23:18:54.847501+00:00",
+    "snapshot_file": "state_snapshot_20261102_231854.json",
+    "snapshot_sha256": "9db1d7f54b5695951e750e5b0c422e84d4920bf5942a236b49c8d531725ad5fe",
+    "prev_merkle_root": "ba76d7aa9edbc9b4d4539b00e2150cc5095dcdcca56bbde9af9015556da6f51e",
+    "merkle_root": "8c5a225ea16bf3cc66dc4f0507a94d502f5771947df92522443f56d61a8c56db"
+  },
+  {
+    "index": 18,
+    "version_tag": "20261102_231922",
+    "timestamp": "2026-11-02T23:19:22.175249+00:00",
+    "snapshot_file": "state_snapshot_20261102_231922.json",
+    "snapshot_sha256": "3c003534741159c264fbaf48f5bedde4990230c86170e254b86debd2be5965d1",
+    "prev_merkle_root": "8c5a225ea16bf3cc66dc4f0507a94d502f5771947df92522443f56d61a8c56db",
+    "merkle_root": "66ce33427c4fb0c25c3497bba69bbebbd0c290e9e8f551315ede5887b3e4118a"
+  },
+  {
+    "index": 19,
+    "version_tag": "20261102_234720",
+    "timestamp": "2026-11-02T23:47:20.903823+00:00",
+    "snapshot_file": "state_snapshot_20261102_234720.json",
+    "snapshot_sha256": "b1ab61f6d9192a00e7c1d294a1b5ce317b792756c09939df4020f2d9dabec1b8",
+    "prev_merkle_root": "66ce33427c4fb0c25c3497bba69bbebbd0c290e9e8f551315ede5887b3e4118a",
+    "merkle_root": "109afad45d35189297fe5f1fdb25c531414c4e2fb3f75b751cd64ded37f01e59"
+  },
+  {
+    "index": 20,
+    "version_tag": "20261102_234847",
+    "timestamp": "2026-11-02T23:48:47.856774+00:00",
+    "snapshot_file": "state_snapshot_20261102_234847.json",
+    "snapshot_sha256": "b53c00fb15c5a6fd116bdf7cf59c470683132107d4e02df9dcd6129f6bff6317",
+    "prev_merkle_root": "109afad45d35189297fe5f1fdb25c531414c4e2fb3f75b751cd64ded37f01e59",
+    "merkle_root": "4883a1ac30aa13d50a5a195d15e07829ee4db794295e2a6840d9653b83a51799"
+  },
+  {
+    "index": 21,
+    "version_tag": "20261102_235039",
+    "timestamp": "2026-11-02T23:50:39.438937+00:00",
+    "snapshot_file": "state_snapshot_20261102_235039.json",
+    "snapshot_sha256": "71c0babc539a61c4a6c7661eef0b09932deab4cdbb8957bc5bf6421e962ffb44",
+    "prev_merkle_root": "4883a1ac30aa13d50a5a195d15e07829ee4db794295e2a6840d9653b83a51799",
+    "merkle_root": "6dd12e1126d023c6dfd5c35edaf21ba35b2c723add6cc1281d3fce2af5731917"
+  },
+  {
+    "index": 22,
+    "version_tag": "20261102_235204",
+    "timestamp": "2026-11-02T23:52:04.182228+00:00",
+    "snapshot_file": "state_snapshot_20261102_235204.json",
+    "snapshot_sha256": "c97462f74e9a95d756791bd49ff1950532bcf3cfbc7ce39d9be1b19d1ae49a65",
+    "prev_merkle_root": "6dd12e1126d023c6dfd5c35edaf21ba35b2c723add6cc1281d3fce2af5731917",
+    "merkle_root": "432637f8d84f3ea1b01244dd05df3754dd288ad849b28699c8d021c0b264cf82"
+  },
+  {
+    "index": 23,
+    "version_tag": "20261102_235310",
+    "timestamp": "2026-11-02T23:53:10.868438+00:00",
+    "snapshot_file": "state_snapshot_20261102_235310.json",
+    "snapshot_sha256": "0cb0893773e4c43af15cfe7fb72cb2c457100bc4390064961fdc088f47be626d",
+    "prev_merkle_root": "432637f8d84f3ea1b01244dd05df3754dd288ad849b28699c8d021c0b264cf82",
+    "merkle_root": "7081e0e7d8be7f52589c7d7c906a8fead9cc7c49b8cd5b7b35a66a4b5569c09f"
+  },
+  {
+    "index": 24,
+    "version_tag": "20261102_235403",
+    "timestamp": "2026-11-02T23:54:03.120107+00:00",
+    "snapshot_file": "state_snapshot_20261102_235403.json",
+    "snapshot_sha256": "22365fb70b258056510626d7662c187ec1aaf7cedc91f304c9130288fbabd3b0",
+    "prev_merkle_root": "7081e0e7d8be7f52589c7d7c906a8fead9cc7c49b8cd5b7b35a66a4b5569c09f",
+    "merkle_root": "35403c5ba8615fbc10d38a3046c41534d37088e6d37f466194c7550de4d7c3aa"
+  },
+  {
+    "index": 25,
+    "version_tag": "20261102_235503",
+    "timestamp": "2026-11-02T23:55:03.439626+00:00",
+    "snapshot_file": "state_snapshot_20261102_235503.json",
+    "snapshot_sha256": "1616eb27ee32ca819bbdf433d0234bff4ff78948e3707ac0ee3c0c137b8f075d",
+    "prev_merkle_root": "35403c5ba8615fbc10d38a3046c41534d37088e6d37f466194c7550de4d7c3aa",
+    "merkle_root": "f0dc093a9846985464d1942b1c1ce0a06fde3f5827d317fbe794a959a4c79c10"
+  },
+  {
+    "index": 26,
+    "version_tag": "20261102_235601",
+    "timestamp": "2026-11-02T23:56:01.244241+00:00",
+    "snapshot_file": "state_snapshot_20261102_235601.json",
+    "snapshot_sha256": "4e0055f287fd4af389db512281c286bb95bce06578fa2973133b32ad302bd165",
+    "prev_merkle_root": "f0dc093a9846985464d1942b1c1ce0a06fde3f5827d317fbe794a959a4c79c10",
+    "merkle_root": "eeaa44701cb5d17c782783ab04bca937353d5c3315679b7f494475873fc92ea4"
+  },
+  {
+    "index": 27,
+    "version_tag": "20261102_235659",
+    "timestamp": "2026-11-02T23:56:59.746210+00:00",
+    "snapshot_file": "state_snapshot_20261102_235659.json",
+    "snapshot_sha256": "69fddb4021af7b7a0b90c53980f72c903647760f4dd54fd07d5f28065bab54ee",
+    "prev_merkle_root": "eeaa44701cb5d17c782783ab04bca937353d5c3315679b7f494475873fc92ea4",
+    "merkle_root": "84a5ca02af0910ac4bc800e7996e8369eab74e3d6a66b0b9cc2ff2f5586542b5"
+  },
+  {
+    "index": 28,
+    "version_tag": "20261102_235748",
+    "timestamp": "2026-11-02T23:57:48.439793+00:00",
+    "snapshot_file": "state_snapshot_20261102_235748.json",
+    "snapshot_sha256": "cfec8ee2a2cbc26b4637097818c18cfa636e8247be670d4074200f1b7e7c1932",
+    "prev_merkle_root": "84a5ca02af0910ac4bc800e7996e8369eab74e3d6a66b0b9cc2ff2f5586542b5",
+    "merkle_root": "4e60c7a53b1abf76cc7c4c82de38a2ead19d10522a8460e944052f11bec66948"
+  },
+  {
+    "index": 29,
+    "version_tag": "20261102_235847",
+    "timestamp": "2026-11-02T23:58:47.745305+00:00",
+    "snapshot_file": "state_snapshot_20261102_235847.json",
+    "snapshot_sha256": "4de4c369ef04d6aa3b03ce24d70d158a8d20cb5bb23b0ff800b3fbd89a1f5e15",
+    "prev_merkle_root": "4e60c7a53b1abf76cc7c4c82de38a2ead19d10522a8460e944052f11bec66948",
+    "merkle_root": "2ee2b49a4d142ae46a3c4abc913ea3db97058e5f6c03a1041e5dd0a79ed26214"
+  },
+  {
+    "index": 30,
+    "version_tag": "20261102_235937",
+    "timestamp": "2026-11-02T23:59:37.067806+00:00",
+    "snapshot_file": "state_snapshot_20261102_235937.json",
+    "snapshot_sha256": "c751a93070af84156544b0d443adbd2caac49a48295483bd6d28d59415cca638",
+    "prev_merkle_root": "2ee2b49a4d142ae46a3c4abc913ea3db97058e5f6c03a1041e5dd0a79ed26214",
+    "merkle_root": "5520f9927ed9a2ebdebb67613eb5a23c29fa19d2bc5fb78961069a96441773b0"
+  },
+  {
+    "index": 31,
+    "version_tag": "20261103_000025",
+    "timestamp": "2026-11-03T00:00:25.180192+00:00",
+    "snapshot_file": "state_snapshot_20261103_000025.json",
+    "snapshot_sha256": "6aa92bf315f1ab07c8d548cf231b32364eb3e442476b930ae5812be3a2b58de8",
+    "prev_merkle_root": "5520f9927ed9a2ebdebb67613eb5a23c29fa19d2bc5fb78961069a96441773b0",
+    "merkle_root": "f54ef44c55bd81f501f3851b4d04bb1eb7709687870cab635224b0bd5b2b2d75"
+  },
+  {
+    "index": 32,
+    "version_tag": "20261103_001035",
+    "timestamp": "2026-11-03T00:10:35.113605+00:00",
+    "snapshot_file": "state_snapshot_20261103_001035.json",
+    "snapshot_sha256": "f0f106a6ea521430d7f64c6a970de90f0f17abe928f49073f344d33c9a4bcde8",
+    "prev_merkle_root": "f54ef44c55bd81f501f3851b4d04bb1eb7709687870cab635224b0bd5b2b2d75",
+    "merkle_root": "2da8e59b42f958cefee4ddc37a1a631cb74b5a1f4d781869d8cab63dacecf8a3"
+  },
+  {
+    "index": 33,
+    "version_tag": "20261103_001124",
+    "timestamp": "2026-11-03T00:11:24.269921+00:00",
+    "snapshot_file": "state_snapshot_20261103_001124.json",
+    "snapshot_sha256": "c6e3df9380befc58471d361c1f337edf8db416ade6abf40198d8b2f54fe4bc9f",
+    "prev_merkle_root": "2da8e59b42f958cefee4ddc37a1a631cb74b5a1f4d781869d8cab63dacecf8a3",
+    "merkle_root": "44aea0edc1f9e64a0eda9c64b62e202525d3ad7e5c008e3c2b14522c8debadb7"
+  },
+  {
+    "index": 34,
+    "version_tag": "20261103_001151",
+    "timestamp": "2026-11-03T00:11:51.485551+00:00",
+    "snapshot_file": "state_snapshot_20261103_001151.json",
+    "snapshot_sha256": "f6e1e9c49f80087b940d2a8424885862e8860de564dd1613dd2ec34839b89b42",
+    "prev_merkle_root": "44aea0edc1f9e64a0eda9c64b62e202525d3ad7e5c008e3c2b14522c8debadb7",
+    "merkle_root": "db268a6ce709250e2fcd32f51f6a58c48c49f5e29916c09a15f735c4767e0d03"
+  },
+  {
+    "index": 35,
+    "version_tag": "20261103_004816",
+    "timestamp": "2026-11-03T00:48:16.451122+00:00",
+    "snapshot_file": "state_snapshot_20261103_004816.json",
+    "snapshot_sha256": "560bc52aad3b44daae344ab3e055f69af6abac7c689397f778b0dd4e36af1c6d",
+    "prev_merkle_root": "db268a6ce709250e2fcd32f51f6a58c48c49f5e29916c09a15f735c4767e0d03",
+    "merkle_root": "389497e627d4857f3b4cea363456ec4bbb26c664aac8f4a5de5164ec4b9e6b0e"
+  },
+  {
+    "index": 36,
+    "version_tag": "20261103_004855",
+    "timestamp": "2026-11-03T00:48:55.123631+00:00",
+    "snapshot_file": "state_snapshot_20261103_004855.json",
+    "snapshot_sha256": "65394d15aba0476f6693e0e09c4600f2d218b83daca9debb19a832f90c5afebb",
+    "prev_merkle_root": "389497e627d4857f3b4cea363456ec4bbb26c664aac8f4a5de5164ec4b9e6b0e",
+    "merkle_root": "c6dfa7e97e8f8e56de9bbe09914160932d626e5c573b74f010a04d4408cc006b"
+  },
+  {
+    "index": 37,
+    "version_tag": "20261103_004931",
+    "timestamp": "2026-11-03T00:49:31.939921+00:00",
+    "snapshot_file": "state_snapshot_20261103_004931.json",
+    "snapshot_sha256": "c980f09e5e6a991e03281ecd64083b575619588c9c0b3dd329eb902142477905",
+    "prev_merkle_root": "c6dfa7e97e8f8e56de9bbe09914160932d626e5c573b74f010a04d4408cc006b",
+    "merkle_root": "0ac4e5ea30a157ed18f7b4ac8a017d59403be7ce7949d9b0cfc7b7ba926b3271"
+  },
+  {
+    "index": 38,
+    "version_tag": "20261103_005239",
+    "timestamp": "2026-11-03T00:52:39.915478+00:00",
+    "snapshot_file": "state_snapshot_20261103_005239.json",
+    "snapshot_sha256": "5c27cf9e53a687dd2369e20cebbb5ba01b630dd525388eeeb5befc5ed6e1697f",
+    "prev_merkle_root": "0ac4e5ea30a157ed18f7b4ac8a017d59403be7ce7949d9b0cfc7b7ba926b3271",
+    "merkle_root": "e9b2aa9219217280f63d8b53c7715b38bafe9f69a822c2a3a18355a703e111ba"
+  },
+  {
+    "index": 39,
+    "version_tag": "20261103_005618",
+    "timestamp": "2026-11-03T00:56:18.326992+00:00",
+    "snapshot_file": "state_snapshot_20261103_005618.json",
+    "snapshot_sha256": "662cb90fe722cbacc743ab46621746338144434f9415d09ae9b1d70702a067d8",
+    "prev_merkle_root": "e9b2aa9219217280f63d8b53c7715b38bafe9f69a822c2a3a18355a703e111ba",
+    "merkle_root": "52276ef79d81eebad159e4cbb1ede73210f62e10211c70c75fe24845642bd197"
+  },
+  {
+    "index": 40,
+    "version_tag": "20261103_010043",
+    "timestamp": "2026-11-03T01:00:43.881185+00:00",
+    "snapshot_file": "state_snapshot_20261103_010043.json",
+    "snapshot_sha256": "607e78a64259c919b52f6bb3970e6839e6b65d55c4f35b65096d81c23fa2130e",
+    "prev_merkle_root": "52276ef79d81eebad159e4cbb1ede73210f62e10211c70c75fe24845642bd197",
+    "merkle_root": "5e385d2d0cc277a30743206073bd34ad68edf68391dd05704bba3975f0ff6d39"
+  },
+  {
+    "index": 41,
+    "version_tag": "20261103_012400",
+    "timestamp": "2026-11-03T01:24:00.450251+00:00",
+    "snapshot_file": "state_snapshot_20261103_012400.json",
+    "snapshot_sha256": "6a26e5d09359cfd1523d290a5acac3b746a60d2d16a01f6d16a1df27460c91e7",
+    "prev_merkle_root": "5e385d2d0cc277a30743206073bd34ad68edf68391dd05704bba3975f0ff6d39",
+    "merkle_root": "d078f1cead5c7f363df95c96d9eb8380976baeb179674838f9e2b122747d9070"
+  },
+  {
+    "index": 42,
+    "version_tag": "20261103_012519",
+    "timestamp": "2026-11-03T01:25:19.571221+00:00",
+    "snapshot_file": "state_snapshot_20261103_012519.json",
+    "snapshot_sha256": "0d10245a0c025f145bc7d19088adf2506bac491b9d951bb85150101c1d945f13",
+    "prev_merkle_root": "d078f1cead5c7f363df95c96d9eb8380976baeb179674838f9e2b122747d9070",
+    "merkle_root": "8f3b06b42a07f919dd03d299cbf1f4e93186e0eb6ee70d8262f4aa2fa1d57436"
+  },
+  {
+    "index": 43,
+    "version_tag": "20261103_025244",
+    "timestamp": "2026-11-03T02:52:44.804332+00:00",
+    "snapshot_file": "state_snapshot_20261103_025244.json",
+    "snapshot_sha256": "fb46eaa288bc11f769f301045826f6f33fa32f552d3c3f890a5a4899ce5b2957",
+    "prev_merkle_root": "8f3b06b42a07f919dd03d299cbf1f4e93186e0eb6ee70d8262f4aa2fa1d57436",
+    "merkle_root": "c1c3f0081ba9085b78d19622ee3239f079eb15cbef579151baba54ac8fbaf7dc"
+  },
+  {
+    "index": 44,
+    "version_tag": "20261103_025539",
+    "timestamp": "2026-11-03T02:55:39.734424+00:00",
+    "snapshot_file": "state_snapshot_20261103_025539.json",
+    "snapshot_sha256": "f8d8d7cf6e23d558774c14de80994012c73d081f1dbe0d51db5fa65255009d92",
+    "prev_merkle_root": "c1c3f0081ba9085b78d19622ee3239f079eb15cbef579151baba54ac8fbaf7dc",
+    "merkle_root": "0740f1224378c2bd491386ec77dd26ddd1279275543ba7f78b078645ff74f786"
+  },
+  {
+    "index": 45,
+    "version_tag": "20261103_064238",
+    "timestamp": "2026-11-03T06:42:38.694235+00:00",
+    "snapshot_file": "state_snapshot_20261103_064238.json",
+    "snapshot_sha256": "6f220efef78b9c872fc24c86bdb1bf2ff5ac0b561318e5263c73ba47a2ff3fd3",
+    "prev_merkle_root": "0740f1224378c2bd491386ec77dd26ddd1279275543ba7f78b078645ff74f786",
+    "merkle_root": "1ade302c8708e08c4bd86965f4efdc8b6ddcf9ed64757e066ec1e64a0813bae5"
+  },
+  {
+    "index": 46,
+    "version_tag": "20261103_092959",
+    "timestamp": "2026-11-03T09:29:59.066673+00:00",
+    "snapshot_file": "state_snapshot_20261103_092959.json",
+    "snapshot_sha256": "08e503cea0b6046708c79b62f471e74209db4eeace6460b54de0b71a7ca81faf",
+    "prev_merkle_root": "1ade302c8708e08c4bd86965f4efdc8b6ddcf9ed64757e066ec1e64a0813bae5",
+    "merkle_root": "0921a6ba1ec0a5bcb24b2b6a7729b22fe17e0cbe70384bd03ea671259e855575"
+  },
+  {
+    "index": 47,
+    "version_tag": "20261103_124155",
+    "timestamp": "2026-11-03T12:41:55.135641+00:00",
+    "snapshot_file": "state_snapshot_20261103_124155.json",
+    "snapshot_sha256": "2a0467535ee5f3be7b905375e0909ffead1610ac1211230c810e4779c9ebda0c",
+    "prev_merkle_root": "0921a6ba1ec0a5bcb24b2b6a7729b22fe17e0cbe70384bd03ea671259e855575",
+    "merkle_root": "4c3cdc004e6768ec20ba720694cb96c99a547393f5ef448a52c58f4373d2b236"
+  },
+  {
+    "index": 48,
+    "version_tag": "20261103_183013",
+    "timestamp": "2026-11-03T18:30:13.811499+00:00",
+    "snapshot_file": "state_snapshot_20261103_183013.json",
+    "snapshot_sha256": "ffde1162e04e9b6e7ef44486bab925e5bb94be9b118e190fdfe43a1c21b88c79",
+    "prev_merkle_root": "4c3cdc004e6768ec20ba720694cb96c99a547393f5ef448a52c58f4373d2b236",
+    "merkle_root": "d835ae5b829726552118ab00254924ae092607fd5eb30ae5160c15aa4a1539d1"
+  },
+  {
+    "index": 49,
+    "version_tag": "20261104_002534",
+    "timestamp": "2026-11-04T00:25:34.067140+00:00",
+    "snapshot_file": "state_snapshot_20261104_002534.json",
+    "snapshot_sha256": "f2dcecaf065c2aeacf18cc5ff71957389185956d7a6328a5fbcc90b93e7fa43e",
+    "prev_merkle_root": "d835ae5b829726552118ab00254924ae092607fd5eb30ae5160c15aa4a1539d1",
+    "merkle_root": "ddddf00cfcbd27450145905a54a425764c2b719d458ce241d3eb274186db9795"
+  },
+  {
+    "index": 50,
+    "version_tag": "20261104_064808",
+    "timestamp": "2026-11-04T06:48:08.364357+00:00",
+    "snapshot_file": "state_snapshot_20261104_064808.json",
+    "snapshot_sha256": "845982e1bdce190f5bfe1cae169c3a869f3f8587710bd5b5a4f9c2173b89c567",
+    "prev_merkle_root": "ddddf00cfcbd27450145905a54a425764c2b719d458ce241d3eb274186db9795",
+    "merkle_root": "1276a0d1feec120c596d930389e8b5a0f5dbbafea87d9f0d87955b32e29831c2"
+  },
+  {
+    "index": 51,
+    "version_tag": "20261104_123817",
+    "timestamp": "2026-11-04T12:38:17.079638+00:00",
+    "snapshot_file": "state_snapshot_20261104_123817.json",
+    "snapshot_sha256": "8d0b1a794f448d2509f8fe4869a1f612ca87b8b3f13f667d233af0221dd98ce6",
+    "prev_merkle_root": "1276a0d1feec120c596d930389e8b5a0f5dbbafea87d9f0d87955b32e29831c2",
+    "merkle_root": "a1e3abf192dbff95a47b9004481ae0edb127bdd0c3dc56fd9d91578423f555aa"
+  },
+  {
+    "index": 52,
+    "version_tag": "20261104_183837",
+    "timestamp": "2026-11-04T18:38:37.661124+00:00",
+    "snapshot_file": "state_snapshot_20261104_183837.json",
+    "snapshot_sha256": "412ac5a35f6fa17488a37ec40928e242deb3c58da47724b18a701ca34ed233bb",
+    "prev_merkle_root": "a1e3abf192dbff95a47b9004481ae0edb127bdd0c3dc56fd9d91578423f555aa",
+    "merkle_root": "cad1d6444145416e51d7cd27f6020dbe7c1ed7b08868c3608539ac3baceeb3c5"
+  },
+  {
+    "index": 53,
+    "version_tag": "20261104_220418",
+    "timestamp": "2026-11-04T22:04:18.222887+00:00",
+    "snapshot_file": "state_snapshot_20261104_220418.json",
+    "snapshot_sha256": "29f09adbdf37fd63e810f3ce911fd63d10ccc54e7bb0a187c0b3f637dda2ffa5",
+    "prev_merkle_root": "cad1d6444145416e51d7cd27f6020dbe7c1ed7b08868c3608539ac3baceeb3c5",
+    "merkle_root": "173e07171342abf481d98e88818a36a0d051de93fe4aff77b0372bc6ff3d825f"
+  },
+  {
+    "index": 54,
+    "version_tag": "20261104_220512",
+    "timestamp": "2026-11-04T22:05:12.012552+00:00",
+    "snapshot_file": "state_snapshot_20261104_220512.json",
+    "snapshot_sha256": "781dc45f543ef73e7ba3f6a56b67c08c5d193a1ac4d8008b4d4affeba213b9c4",
+    "prev_merkle_root": "173e07171342abf481d98e88818a36a0d051de93fe4aff77b0372bc6ff3d825f",
+    "merkle_root": "91e09ba9ade2af88ccf8738bb870b4804f5d55827000fb8ecab313b60f57f4b5"
+  },
+  {
+    "index": 55,
+    "version_tag": "20261104_220601",
+    "timestamp": "2026-11-04T22:06:01.176729+00:00",
+    "snapshot_file": "state_snapshot_20261104_220601.json",
+    "snapshot_sha256": "d96524b221aa5a48828b30fadcf286fba674b3aaf4c234e10b19dbc05cd53a14",
+    "prev_merkle_root": "91e09ba9ade2af88ccf8738bb870b4804f5d55827000fb8ecab313b60f57f4b5",
+    "merkle_root": "f573b7deb1899c177fe4427f5ba177f2bc874745dfc1deffba4fdc1432ac0aa7"
+  },
+  {
+    "index": 56,
+    "version_tag": "20261104_220710",
+    "timestamp": "2026-11-04T22:07:10.676182+00:00",
+    "snapshot_file": "state_snapshot_20261104_220710.json",
+    "snapshot_sha256": "a99d5f165073398a0924fb0133675c27ad83d9397affb9555d6de1b1305b9c7d",
+    "prev_merkle_root": "f573b7deb1899c177fe4427f5ba177f2bc874745dfc1deffba4fdc1432ac0aa7",
+    "merkle_root": "91215c95d1ee3b3815a0cfc70c4f8614b2365c103bcc1d963349fe87581fff1a"
+  },
+  {
+    "index": 57,
+    "version_tag": "20261104_220810",
+    "timestamp": "2026-11-04T22:08:10.683001+00:00",
+    "snapshot_file": "state_snapshot_20261104_220810.json",
+    "snapshot_sha256": "992c3b6af189b82c5c2a7a51a4be13109d065343e4fe8dab4c54fb03c91368f2",
+    "prev_merkle_root": "91215c95d1ee3b3815a0cfc70c4f8614b2365c103bcc1d963349fe87581fff1a",
+    "merkle_root": "57fee9fe788d6e126e1fcfb6c01fd714cd57c6dc93dc9e1b78a12b82c419ce79"
+  },
+  {
+    "index": 58,
+    "version_tag": "20261104_221050",
+    "timestamp": "2026-11-04T22:10:50.571780+00:00",
+    "snapshot_file": "state_snapshot_20261104_221050.json",
+    "snapshot_sha256": "384dbcde4068ec3acc31b327712df5176d36fb97f69bd5bf4aa328c870b69599",
+    "prev_merkle_root": "57fee9fe788d6e126e1fcfb6c01fd714cd57c6dc93dc9e1b78a12b82c419ce79",
+    "merkle_root": "76e830b449252fdd4bf9bcd9a6e0718b219ac7d7ba2f3e48d28acca9f4bb8dfc"
+  }
+]
