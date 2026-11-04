@@ -1,12 +1,12 @@
 {
   "oracle_version": "AAIRE-v7.0-ZeroRot-Enterprise",
-  "generated_at_utc": 1793829858.791,
+  "generated_at_utc": 1793829912.445,
   "monetization_ready": true,
   "cryptographic_proof": {
-    "merkle_block_index": 93,
+    "merkle_block_index": 98,
     "merkle_root": "c0415b346e90a4fb75eecae861700db67d26b4a862afd86cc7c8cce1286a16d8",
-    "block_hash": "0a4230237076fca9f6c1c2119a877dc29babcdcf8af543dc03da9201529f97ea",
-    "hmac_sha256_signature": "b6711e44410747577aa812169d947839766ba79b1919588f38ccf05b0e9c990b"
+    "block_hash": "29d3ac271df7e5ee0b62b53214cf6965a9f539d4b0bc75f01afbfb1e836eb9a4",
+    "hmac_sha256_signature": "aff0ad8577a0f95ec0bf9ab66a6bf538e37b6f94a20356158e41c9640699d951"
   },
   "total_sources": 3,
   "feeds": [
@@ -15,7 +15,7 @@
       "source_url": "https://news.ycombinator.com/",
       "status": "HEALED_AND_EXTRACTED",
       "self_healed_strategy": "strategy_hybrid_merge",
-      "extraction_latency_ns": 12708,
+      "extraction_latency_ns": 13870,
       "bayesian_trust_score": 0.9057,
       "item_count": 25,
       "verified_payload": [
@@ -61,7 +61,7 @@
       "source_url": "https://pypi.org/",
       "status": "HEALED_AND_EXTRACTED",
       "self_healed_strategy": "strategy_hybrid_merge",
-      "extraction_latency_ns": 14303,
+      "extraction_latency_ns": 25227,
       "bayesian_trust_score": 0.9057,
       "item_count": 25,
       "verified_payload": [
