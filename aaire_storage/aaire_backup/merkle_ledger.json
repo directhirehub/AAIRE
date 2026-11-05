@@ -1,38 +1,43 @@
 {
   "oracle_version": "AAIRE-v10.0-REA-50X-Autonomous",
-  "generated_at_utc": 1793861440.356,
+  "generated_at_utc": 1793882723.574,
   "monetization_ready": true,
   "cryptographic_proof": {
     "merkle_block_index": 100,
-    "merkle_root": "108dad07e3ec97b11dac4fa9f2a8ec9f8f9ff94e4ad7579be32321cc9dd44a07",
-    "block_hash": "fd38c9f8d33be5344ceac9f5dc43bbf6482842d341e3165ba92987f3d1cde4d8",
-    "hmac_sha256_signature": "40594c823b0d9380cb048e2a21b706cc7765e168aa263aac082dbcc6b60fbb6c"
+    "merkle_root": "b62268a8476320a7e4fd34065a002b1b0e7a1ddd6a1ea06578f2e2e6539f233b",
+    "block_hash": "7de71b51ee5e4dc36a9ac880c596f742b9f95dc536304e21dbdfcb42080640a3",
+    "hmac_sha256_signature": "db7c667e4ba1f0f2f42354fa3fb6dba1f486d4c6da64cc230c9ee877d8004b23"
   },
   "total_sources": 5,
-  "total_retained_facts": 99,
+  "total_retained_facts": 98,
   "feeds": [
     {
       "feed_category": "global_tech_intelligence",
       "source_url": "https://news.ycombinator.com/rss",
       "status": "HEALED_AND_EXTRACTED",
       "self_healed_strategy": "rea_50x_polyglot_surface",
-      "extraction_latency_ms": 250.02,
+      "extraction_latency_ms": 279.14,
       "discovered_routes": [
-        "https://news.ycombinator.com/item?id=50338474",
-        "https://news.ycombinator.com/item?id=50339183",
+        "https://news.ycombinator.com/item?id=50340195",
         "https://news.ycombinator.com/item?id=50341576",
+        "https://news.ycombinator.com/item?id=50343293",
         "https://news.ycombinator.com/item?id=50349165",
-        "https://news.ycombinator.com/item?id=50356791",
-        "https://news.ycombinator.com/item?id=50363353",
+        "https://news.ycombinator.com/item?id=50352846",
+        "https://news.ycombinator.com/item?id=50364284",
         "https://news.ycombinator.com/item?id=50364336",
-        "https://news.ycombinator.com/item?id=50364860",
-        "https://news.ycombinator.com/item?id=50365780",
         "https://news.ycombinator.com/item?id=50366117",
+        "https://news.ycombinator.com/item?id=50366465",
         "https://news.ycombinator.com/item?id=50366522",
-        "https://news.ycombinator.com/item?id=50366853"
+        "https://news.ycombinator.com/item?id=50366999",
+        "https://news.ycombinator.com/item?id=50368626"
       ],
-      "item_count": 25,
+      "item_count": 24,
       "retained_facts": [
+        {
+          "fact_text": "Baidu released ERNIE 5.5 Flash Base",
+          "source_url": "https://ernie.baidu.com/release/ernie-5-5-flash-base/",
+          "category": "global_tech_intelligence"
+        },
         {
           "fact_text": "Residential proxies detected on White House network",
           "source_url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
@@ -44,8 +49,8 @@
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Images 2.6",
-          "source_url": "https://openai.com/index/introducing-images-2-6/",
+          "fact_text": "Awesome repositories are no longer awesome",
+          "source_url": "https://erikgahner.github.io/posts/2026/awesome-repositories-are-no-longer-awesome/",
           "category": "global_tech_intelligence"
         },
         {
@@ -54,13 +59,13 @@
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Starfall – Affordable, routine access to microgravity",
-          "source_url": "https://www.spacex.com/starfall",
+          "fact_text": "Images 2.6",
+          "source_url": "https://openai.com/index/introducing-images-2-6/",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
-          "source_url": "https://www.ricursive.com/ripple",
+          "fact_text": "Partial Operator Precedence",
+          "source_url": "https://ziglang.org/devlog/2026/#2026-10-24",
           "category": "global_tech_intelligence"
         },
         {
@@ -69,13 +74,18 @@
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Spreading Liquid with Three.js",
-          "source_url": "https://mofu-dev.com/en/blog/fluid-foundation/",
+          "fact_text": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+          "source_url": "https://www.ricursive.com/ripple",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Insects don&#x27;t swarm at LED lights",
-          "source_url": "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
+          "fact_text": "TScert: A Sound Core for TypeScript",
+          "source_url": "https://github.com/cristianoc/TScert",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Spreading Liquid with Three.js",
+          "source_url": "https://mofu-dev.com/en/blog/fluid-foundation/",
           "category": "global_tech_intelligence"
         },
         {
@@ -84,13 +94,33 @@
           "category": "global_tech_intelligence"
         },
         {
+          "fact_text": "Moment of Ruby: An Argument for Nothing",
+          "source_url": "https://www.aha.io/engineering/articles/moment-of-ruby-an-argument-for-nothing",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "TextEdit vs. Pages",
+          "source_url": "https://leancrew.com/all-this/2026/10/textedit-vs-pages/",
+          "category": "global_tech_intelligence"
+        },
+        {
           "fact_text": "Altera Announces Agilex 2X, a Complete FPGA and SoC Portfolio",
           "source_url": "https://www.altera.com/newsroom/agilex-2x",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Hacking the Xbox 360 Hypervisor Part 3: Bad Update Improvements",
-          "source_url": "https://icode4.coffee/?p=1746",
+          "fact_text": "Being a kid making games in the early 2000s",
+          "source_url": "https://jaytholen.net/teengamedev/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Insects don&#x27;t swarm at LED lights",
+          "source_url": "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "OpenSSH 10.6p2 has been released with a workaround for a critical vulnerability",
+          "source_url": "https://hachyderm.io/@damienmiller/117563026759098135",
           "category": "global_tech_intelligence"
         },
         {
@@ -99,18 +129,18 @@
           "category": "global_tech_intelligence"
         },
         {
+          "fact_text": "Ask HN: What&#x27;s your current AI agentic setup?",
+          "source_url": "https://news.ycombinator.com/item?id=50366117",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Hacking the Xbox 360 Hypervisor Part 3: Bad Update Improvements",
+          "source_url": "https://icode4.coffee/?p=1746",
+          "category": "global_tech_intelligence"
+        },
+        {
           "fact_text": "Future Maintenance of Mbed TLS",
           "source_url": "https://lists.trustedfirmware.org/archives/list/mbed-tls@lists.trustedfirmware.org/thread/YPIGCB7WN6GCHOGEGKOJXUYAP7OK527W/",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB&#x2F;s",
-          "source_url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Show HN: After a decade of reversing, I got co-op working in DOS Wing Commander",
-          "source_url": "https://fireflyk64.github.io/wcmulti/",
           "category": "global_tech_intelligence"
         },
         {
@@ -119,67 +149,32 @@
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Progress on provable inference for large language models",
-          "source_url": "https://www.anthropic.com/research/provable-inference",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Ask HN: What&#x27;s your current AI agentic setup?",
-          "source_url": "https://news.ycombinator.com/item?id=50366117",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Launch HN: Kino AI (YC S23) – AI media manager and video editor",
-          "source_url": "https://news.ycombinator.com/item?id=50368804",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "So my ISP was hijacking my DNS",
-          "source_url": "https://www.karthihegde.dev/posts/dns_tampering",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Guerrilla bike lanes: San Francisco makes illicit infrastructure permanent (2016)",
-          "source_url": "https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "OpenAI to acquire Pierre Computer Company",
-          "source_url": "https://openai.com/index/openai-to-acquire-pierre/",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Basically no one is using AI agents for their DoorDash orders",
-          "source_url": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "A wave of plastic-free coffee pods and machines",
-          "source_url": "https://www.cnn.com/2026/11/02/food/coffee-machine-plastic-free",
+          "fact_text": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB&#x2F;s",
+          "source_url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
           "category": "global_tech_intelligence"
         }
       ],
       "verified_payload": [
+        "https://ernie.baidu.com/release/ernie-5-5-flash-base/",
         "https://layer3intel.com/blog/residential-proxies-white-house-network",
         "https://markblah.github.io/lemmings/",
-        "https://openai.com/index/introducing-images-2-6/",
+        "https://erikgahner.github.io/posts/2026/awesome-repositories-are-no-longer-awesome/",
         "https://openai.com/index/a-thousand-fewer-paths-to-root/",
-        "https://www.spacex.com/starfall",
-        "https://www.ricursive.com/ripple",
+        "https://openai.com/index/introducing-images-2-6/",
+        "https://ziglang.org/devlog/2026/#2026-10-24",
         "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+        "https://www.ricursive.com/ripple",
+        "https://github.com/cristianoc/TScert",
         "https://mofu-dev.com/en/blog/fluid-foundation/",
-        "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
         "https://go.dev/blog/jsonv2",
+        "https://www.aha.io/engineering/articles/moment-of-ruby-an-argument-for-nothing",
+        "https://leancrew.com/all-this/2026/10/textedit-vs-pages/",
         "https://www.altera.com/newsroom/agilex-2x",
-        "https://icode4.coffee/?p=1746",
+        "https://jaytholen.net/teengamedev/",
+        "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
+        "https://hachyderm.io/@damienmiller/117563026759098135",
         "https://www.conductor.build/announcement",
-        "https://lists.trustedfirmware.org/archives/list/mbed-tls@lists.trustedfirmware.org/thread/YPIGCB7WN6GCHOGEGKOJXUYAP7OK527W/",
-        "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
-        "https://fireflyk64.github.io/wcmulti/",
-        "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
-        "https://www.anthropic.com/research/provable-inference",
-        "https://news.ycombinator.com/item?id=50366117",
-        "https://news.ycombinator.com/item?id=50368804"
+        "https://news.ycombinator.com/item?id=50366117"
       ],
       "bayesian_trust_score": 0.99
     },
@@ -188,26 +183,56 @@
       "source_url": "https://hnrss.org/newest?points=50",
       "status": "HEALED_AND_EXTRACTED",
       "self_healed_strategy": "rea_50x_polyglot_surface",
-      "extraction_latency_ms": 230.18,
+      "extraction_latency_ms": 92.72,
       "discovered_routes": [
         "http://purl.org/dc/elements/1.1/",
         "http://www.w3.org/2005/Atom",
-        "https://blog.kagi.com/education-should-not-be-held-for-ransom",
         "https://dbushell.com/2026/11/03/xslt-rip/",
+        "https://erikgahner.github.io/posts/2026/awesome-repositories-are-no-longer-awesome/",
+        "https://ernie.baidu.com/release/ernie-5-5-flash-base/",
         "https://fireflyk64.github.io/wcmulti/",
-        "https://go.dev/blog/jsonv2",
         "https://hnrss.org/newest?points=50",
         "https://icode4.coffee/?p=1746",
-        "https://kino.ai",
-        "https://kino.ai/launch-video",
-        "https://kino.ai/walkthrough-video",
-        "https://ladybird.org/newsletter/2026-10-31/"
+        "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
+        "https://markblah.github.io/lemmings/",
+        "https://news.ycombinator.com/item?id=50369840",
+        "https://news.ycombinator.com/item?id=50369895"
       ],
       "item_count": 25,
       "retained_facts": [
         {
+          "fact_text": "Awesome repositories are no longer awesome",
+          "source_url": "https://erikgahner.github.io/posts/2026/awesome-repositories-are-no-longer-awesome/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Baidu released ERNIE 5.5 Flash Base",
+          "source_url": "https://ernie.baidu.com/release/ernie-5-5-flash-base/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Want to Rent an Internet Address at the White House?",
+          "source_url": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Lemmings CSS Animation",
+          "source_url": "https://markblah.github.io/lemmings/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "American Voters Overwhelmingly Reject AI Data Centers",
+          "source_url": "https://www.404media.co/american-voters-overwhelmingly-reject-ai-data-centers/",
+          "category": "global_tech_intelligence"
+        },
+        {
           "fact_text": "Starfall – Affordable, routine access to microgravity",
           "source_url": "https://www.spacex.com/starfall",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "You'll need nerves of steel to work with AI agents",
+          "source_url": "https://orchidfiles.com/youll-need-nerves-of-steel-to-work-with-ai-agents/",
           "category": "global_tech_intelligence"
         },
         {
@@ -218,6 +243,11 @@
         {
           "fact_text": "A thousand fewer paths to root",
           "source_url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Ask HN: What your experience with the monthly \"who wants to be hired\" thread?",
+          "source_url": "https://news.ycombinator.com/item?id=50372294",
           "category": "global_tech_intelligence"
         },
         {
@@ -233,6 +263,11 @@
         {
           "fact_text": "Death Comes for XSLT",
           "source_url": "https://dbushell.com/2026/11/03/xslt-rip/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "If you're on Replit Pro, you have until November 8 to opt out of arbitration",
+          "source_url": "https://readthediff.substack.com/p/replit-pro-arbitration-opt-out-november-8",
           "category": "global_tech_intelligence"
         },
         {
@@ -266,92 +301,52 @@
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Have I befriended a murderer?",
-          "source_url": "https://longreads.com/2026/11/03/murder-friendship-doubt/",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Education shouldn't be held for ransom",
-          "source_url": "https://blog.kagi.com/education-should-not-be-held-for-ransom",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Conductor is joining Meta",
-          "source_url": "https://www.conductor.build/announcement",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "This Month in Ladybird – October 2026",
-          "source_url": "https://ladybird.org/newsletter/2026-10-31/",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "BYD doubles its Brazil market share to 9.7% a year after opening its local plant",
-          "source_url": "https://www.bloomberg.com/news/articles/2026-11-03/china-s-byd-doubles-market-share-in-brazil-with-new-plant-eyed",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "A new Go API for JSON",
-          "source_url": "https://go.dev/blog/jsonv2",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Launch HN: Kino AI (YC S23) – AI media manager and video editor",
-          "source_url": "https://news.ycombinator.com/item?id=50368804",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Progress on provable inference for large language models",
-          "source_url": "https://www.anthropic.com/research/provable-inference",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Article URL: https://www.spacex.com/starfall",
+          "fact_text": "Article URL: https://erikgahner.github.io/posts/2026/awesome-repositories-are-no-longer-awesome/",
           "source_url": "https://hnrss.org/newest?points=50",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "https://news.ycombinator.com/item?id=50373308",
-          "source_url": "https://news.ycombinator.com/item?id=50373308",
+          "fact_text": "https://news.ycombinator.com/item?id=50377821",
+          "source_url": "https://news.ycombinator.com/item?id=50377821",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "https://openai.com/index/introducing-images-2-6/",
-          "source_url": "https://openai.com/index/introducing-images-2-6/",
+          "fact_text": "https://ernie.baidu.com/release/ernie-5-5-flash-base/",
+          "source_url": "https://ernie.baidu.com/release/ernie-5-5-flash-base/",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "https://news.ycombinator.com/item?id=50372945",
-          "source_url": "https://news.ycombinator.com/item?id=50372945",
+          "fact_text": "https://news.ycombinator.com/item?id=50377078",
+          "source_url": "https://news.ycombinator.com/item?id=50377078",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
-          "source_url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+          "fact_text": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
+          "source_url": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
           "category": "global_tech_intelligence"
         }
       ],
       "verified_payload": [
+        "https://erikgahner.github.io/posts/2026/awesome-repositories-are-no-longer-awesome/",
+        "https://ernie.baidu.com/release/ernie-5-5-flash-base/",
+        "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
+        "https://markblah.github.io/lemmings/",
+        "https://www.404media.co/american-voters-overwhelmingly-reject-ai-data-centers/",
         "https://www.spacex.com/starfall",
+        "https://orchidfiles.com/youll-need-nerves-of-steel-to-work-with-ai-agents/",
         "https://openai.com/index/introducing-images-2-6/",
         "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+        "https://news.ycombinator.com/item?id=50372294",
         "https://icode4.coffee/?p=1746",
         "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/",
         "https://dbushell.com/2026/11/03/xslt-rip/",
+        "https://readthediff.substack.com/p/replit-pro-arbitration-opt-out-november-8",
         "https://layer3intel.com/blog/residential-proxies-white-house-network",
         "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
         "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
         "https://www.ricursive.com/ripple",
         "https://fireflyk64.github.io/wcmulti/",
-        "https://www.conductor.build/changelog/0.93.0-conductor-is-joining-meta",
-        "https://longreads.com/2026/11/03/murder-friendship-doubt/",
-        "https://blog.kagi.com/education-should-not-be-held-for-ransom",
-        "https://www.conductor.build/announcement",
-        "https://ladybird.org/newsletter/2026-10-31/",
-        "https://www.bloomberg.com/news/articles/2026-11-03/china-s-byd-doubles-market-share-in-brazil-with-new-plant-eyed",
-        "https://go.dev/blog/jsonv2",
-        "https://news.ycombinator.com/item?id=50368804",
-        "https://www.anthropic.com/research/provable-inference"
+        "https://www.conductor.build/changelog/0.93.0-conductor-is-joining-meta"
       ],
       "bayesian_trust_score": 0.99
     },
@@ -360,7 +355,7 @@
       "source_url": "https://remoteok.com/api",
       "status": "HEALED_AND_EXTRACTED",
       "self_healed_strategy": "rea_50x_polyglot_surface",
-      "extraction_latency_ms": 579.53,
+      "extraction_latency_ms": 444.93,
       "discovered_routes": [],
       "item_count": 24,
       "retained_facts": [
@@ -514,7 +509,7 @@
       "source_url": "https://www.arbeitnow.com/api/job-board-api",
       "status": "EMPTY",
       "self_healed_strategy": "rea_50x_polyglot_surface",
-      "extraction_latency_ms": 94.57,
+      "extraction_latency_ms": 497.62,
       "discovered_routes": [],
       "item_count": 0,
       "retained_facts": [],
@@ -526,7 +521,7 @@
       "source_url": "https://arxiv.org/rss/cs.AI",
       "status": "HEALED_AND_EXTRACTED",
       "self_healed_strategy": "rea_50x_polyglot_surface",
-      "extraction_latency_ms": 313.38,
+      "extraction_latency_ms": 353.34,
       "discovered_routes": [
         "http://arxiv.org/schemas/atom",
         "http://purl.org/dc/elements/1.1/",
