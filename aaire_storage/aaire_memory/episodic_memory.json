@@ -1,18 +1,18 @@
 {
   "latest_rea_episode": {
-    "timestamp": 1793838787.1,
+    "timestamp": 1793861440.36,
     "sources_learned": 5,
     "dominant_concepts": [
       "ai",
       "manager",
-      "hn",
-      "engineer",
-      "https",
-      "us",
-      "cloud",
-      "client",
       "agentic",
-      "conductor"
+      "agents",
+      "engineer",
+      "hn",
+      "models",
+      "https",
+      "cloud",
+      "inference"
     ]
   }
 }

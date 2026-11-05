@@ -1,35 +1,35 @@
 {
   "oracle_version": "AAIRE-v10.0-REA-50X-Autonomous",
-  "generated_at_utc": 1793838787.103,
+  "generated_at_utc": 1793861440.356,
   "monetization_ready": true,
   "cryptographic_proof": {
     "merkle_block_index": 100,
-    "merkle_root": "1f19251c1152a2bac9c3489d32676010d6ae8ad7be4de8e525fbd69b6455256e",
-    "block_hash": "4679a3b1c06ae48da1d1fb8bd2757939811f6032dba14bb329a44d892d993161",
-    "hmac_sha256_signature": "1ebe205c7a6e3cc33e081ee97207ed448541b9ce5401a7f43105334646fff72d"
+    "merkle_root": "108dad07e3ec97b11dac4fa9f2a8ec9f8f9ff94e4ad7579be32321cc9dd44a07",
+    "block_hash": "fd38c9f8d33be5344ceac9f5dc43bbf6482842d341e3165ba92987f3d1cde4d8",
+    "hmac_sha256_signature": "40594c823b0d9380cb048e2a21b706cc7765e168aa263aac082dbcc6b60fbb6c"
   },
   "total_sources": 5,
-  "total_retained_facts": 74,
+  "total_retained_facts": 99,
   "feeds": [
     {
       "feed_category": "global_tech_intelligence",
       "source_url": "https://news.ycombinator.com/rss",
       "status": "HEALED_AND_EXTRACTED",
       "self_healed_strategy": "rea_50x_polyglot_surface",
-      "extraction_latency_ms": 255.52,
+      "extraction_latency_ms": 250.02,
       "discovered_routes": [
-        "https://news.ycombinator.com/item?id=50337225",
         "https://news.ycombinator.com/item?id=50338474",
         "https://news.ycombinator.com/item?id=50339183",
+        "https://news.ycombinator.com/item?id=50341576",
+        "https://news.ycombinator.com/item?id=50349165",
         "https://news.ycombinator.com/item?id=50356791",
-        "https://news.ycombinator.com/item?id=50362905",
-        "https://news.ycombinator.com/item?id=50363019",
+        "https://news.ycombinator.com/item?id=50363353",
         "https://news.ycombinator.com/item?id=50364336",
+        "https://news.ycombinator.com/item?id=50364860",
         "https://news.ycombinator.com/item?id=50365780",
         "https://news.ycombinator.com/item?id=50366117",
         "https://news.ycombinator.com/item?id=50366522",
-        "https://news.ycombinator.com/item?id=50366853",
-        "https://news.ycombinator.com/item?id=50366863"
+        "https://news.ycombinator.com/item?id=50366853"
       ],
       "item_count": 25,
       "retained_facts": [
@@ -39,13 +39,23 @@
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Introducing Images 2.6",
+          "fact_text": "Lemmings CSS Animation",
+          "source_url": "https://markblah.github.io/lemmings/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Images 2.6",
           "source_url": "https://openai.com/index/introducing-images-2-6/",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "AI is forcing us to pay off 40 years of technical debt",
-          "source_url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+          "fact_text": "A thousand fewer paths to root",
+          "source_url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Starfall – Affordable, routine access to microgravity",
+          "source_url": "https://www.spacex.com/starfall",
           "category": "global_tech_intelligence"
         },
         {
@@ -54,8 +64,13 @@
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Local privilege escalation vulnerabilities in Linux",
-          "source_url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+          "fact_text": "Kimi K3.1 Pro model weights are out",
+          "source_url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Spreading Liquid with Three.js",
+          "source_url": "https://mofu-dev.com/en/blog/fluid-foundation/",
           "category": "global_tech_intelligence"
         },
         {
@@ -64,23 +79,18 @@
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Hacking the Xbox 360 Hypervisor Part 3: Bad Update Improvements",
-          "source_url": "https://icode4.coffee/?p=1746",
-          "category": "global_tech_intelligence"
-        },
-        {
           "fact_text": "A new Go API for JSON",
           "source_url": "https://go.dev/blog/jsonv2",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Kimi K3.1 Pro model weights are out",
-          "source_url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+          "fact_text": "Altera Announces Agilex 2X, a Complete FPGA and SoC Portfolio",
+          "source_url": "https://www.altera.com/newsroom/agilex-2x",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB&#x2F;s",
-          "source_url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
+          "fact_text": "Hacking the Xbox 360 Hypervisor Part 3: Bad Update Improvements",
+          "source_url": "https://icode4.coffee/?p=1746",
           "category": "global_tech_intelligence"
         },
         {
@@ -89,13 +99,13 @@
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Launch HN: Kino AI (YC S23) – AI media manager and video editor",
-          "source_url": "https://news.ycombinator.com/item?id=50368804",
+          "fact_text": "Future Maintenance of Mbed TLS",
+          "source_url": "https://lists.trustedfirmware.org/archives/list/mbed-tls@lists.trustedfirmware.org/thread/YPIGCB7WN6GCHOGEGKOJXUYAP7OK527W/",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Progress on provable inference for large language models",
-          "source_url": "https://www.anthropic.com/research/provable-inference",
+          "fact_text": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB&#x2F;s",
+          "source_url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
           "category": "global_tech_intelligence"
         },
         {
@@ -104,38 +114,13 @@
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
-          "source_url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+          "fact_text": "AI is forcing us to pay off 40 years of technical debt",
+          "source_url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Bf16 might be freezing your weight updates",
-          "source_url": "https://lacuna.tiptreesystems.com/paper/bf16-might-be-freezing-your-weight-updates/art_487b1ed949e745a6ae0c42815b8d3cba",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Guerrilla bike lanes: San Francisco makes illicit infrastructure permanent (2016)",
-          "source_url": "https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Is Curiosity Good for Us?",
-          "source_url": "https://www.lrb.co.uk/the-paper/v48/n20/adam-phillips/is-curiosity-good-for-us",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Basically no one is using AI agents for their DoorDash orders",
-          "source_url": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Show HN: Gauge – Open-Source CLI to recursively improve your docs",
-          "source_url": "https://github.com/gauge-sh/gauge-cli",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "OpenAI to acquire Pierre Computer Company",
-          "source_url": "https://openai.com/index/openai-to-acquire-pierre/",
+          "fact_text": "Progress on provable inference for large language models",
+          "source_url": "https://www.anthropic.com/research/provable-inference",
           "category": "global_tech_intelligence"
         },
         {
@@ -144,42 +129,57 @@
           "category": "global_tech_intelligence"
         },
         {
+          "fact_text": "Launch HN: Kino AI (YC S23) – AI media manager and video editor",
+          "source_url": "https://news.ycombinator.com/item?id=50368804",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "So my ISP was hijacking my DNS",
+          "source_url": "https://www.karthihegde.dev/posts/dns_tampering",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Guerrilla bike lanes: San Francisco makes illicit infrastructure permanent (2016)",
+          "source_url": "https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "OpenAI to acquire Pierre Computer Company",
+          "source_url": "https://openai.com/index/openai-to-acquire-pierre/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Basically no one is using AI agents for their DoorDash orders",
+          "source_url": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/",
+          "category": "global_tech_intelligence"
+        },
+        {
           "fact_text": "A wave of plastic-free coffee pods and machines",
           "source_url": "https://www.cnn.com/2026/11/02/food/coffee-machine-plastic-free",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Death Comes for XSLT",
-          "source_url": "https://dbushell.com/2026/11/03/xslt-rip/",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Tencent Hy4",
-          "source_url": "https://hy.tencent.ai/research/hy4",
           "category": "global_tech_intelligence"
         }
       ],
       "verified_payload": [
         "https://layer3intel.com/blog/residential-proxies-white-house-network",
+        "https://markblah.github.io/lemmings/",
         "https://openai.com/index/introducing-images-2-6/",
-        "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
-        "https://www.ricursive.com/ripple",
         "https://openai.com/index/a-thousand-fewer-paths-to-root/",
-        "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
-        "https://icode4.coffee/?p=1746",
-        "https://go.dev/blog/jsonv2",
+        "https://www.spacex.com/starfall",
+        "https://www.ricursive.com/ripple",
         "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-        "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
+        "https://mofu-dev.com/en/blog/fluid-foundation/",
+        "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
+        "https://go.dev/blog/jsonv2",
+        "https://www.altera.com/newsroom/agilex-2x",
+        "https://icode4.coffee/?p=1746",
         "https://www.conductor.build/announcement",
-        "https://news.ycombinator.com/item?id=50368804",
-        "https://www.anthropic.com/research/provable-inference",
+        "https://lists.trustedfirmware.org/archives/list/mbed-tls@lists.trustedfirmware.org/thread/YPIGCB7WN6GCHOGEGKOJXUYAP7OK527W/",
+        "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
         "https://fireflyk64.github.io/wcmulti/",
-        "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
-        "https://lacuna.tiptreesystems.com/paper/bf16-might-be-freezing-your-weight-updates/art_487b1ed949e745a6ae0c42815b8d3cba",
-        "https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/",
-        "https://www.lrb.co.uk/the-paper/v48/n20/adam-phillips/is-curiosity-good-for-us",
-        "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/",
-        "https://github.com/gauge-sh/gauge-cli"
+        "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+        "https://www.anthropic.com/research/provable-inference",
+        "https://news.ycombinator.com/item?id=50366117",
+        "https://news.ycombinator.com/item?id=50368804"
       ],
       "bayesian_trust_score": 0.99
     },
@@ -188,26 +188,51 @@
       "source_url": "https://hnrss.org/newest?points=50",
       "status": "HEALED_AND_EXTRACTED",
       "self_healed_strategy": "rea_50x_polyglot_surface",
-      "extraction_latency_ms": 1353.87,
+      "extraction_latency_ms": 230.18,
       "discovered_routes": [
         "http://purl.org/dc/elements/1.1/",
         "http://www.w3.org/2005/Atom",
         "https://blog.kagi.com/education-should-not-be-held-for-ransom",
+        "https://dbushell.com/2026/11/03/xslt-rip/",
         "https://fireflyk64.github.io/wcmulti/",
         "https://go.dev/blog/jsonv2",
         "https://hnrss.org/newest?points=50",
-        "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+        "https://icode4.coffee/?p=1746",
         "https://kino.ai",
         "https://kino.ai/launch-video",
         "https://kino.ai/walkthrough-video",
-        "https://ladybird.org/newsletter/2026-10-31/",
-        "https://layer3intel.com/blog/residential-proxies-white-house-network"
+        "https://ladybird.org/newsletter/2026-10-31/"
       ],
       "item_count": 25,
       "retained_facts": [
         {
+          "fact_text": "Starfall – Affordable, routine access to microgravity",
+          "source_url": "https://www.spacex.com/starfall",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Images 2.6",
+          "source_url": "https://openai.com/index/introducing-images-2-6/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "A thousand fewer paths to root",
+          "source_url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Hacking the Xbox 360 Hypervisor Part 3: Bad Update Improvements",
+          "source_url": "https://icode4.coffee/?p=1746",
+          "category": "global_tech_intelligence"
+        },
+        {
           "fact_text": "Everything is an AI scam now",
           "source_url": "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Death Comes for XSLT",
+          "source_url": "https://dbushell.com/2026/11/03/xslt-rip/",
           "category": "global_tech_intelligence"
         },
         {
@@ -281,58 +306,38 @@
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "'It's just vape, nail, charity shops': Can anything save UK high street?",
-          "source_url": "https://www.theguardian.com/business/2026/nov/04/what-can-save-the-british-high-street-rotherham",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "AMD expects to outsell Intel in Q4 for the first time in history",
-          "source_url": "https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "AI data centers comprehensively defeated at US midterm elections",
-          "source_url": "https://www.tomshardware.com/tech-industry/data-centers/ai-data-centers-comprehensively-defeated-at-us-midterm-elections-45-measures-put-on-the-ballot-as-americans-overwhelmingly-vote-against-developments",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Kimi K3.1 Pro model weights are out",
-          "source_url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "YC's Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
-          "source_url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Article URL: https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/",
+          "fact_text": "Article URL: https://www.spacex.com/starfall",
           "source_url": "https://hnrss.org/newest?points=50",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "https://news.ycombinator.com/item?id=50371508",
-          "source_url": "https://news.ycombinator.com/item?id=50371508",
+          "fact_text": "https://news.ycombinator.com/item?id=50373308",
+          "source_url": "https://news.ycombinator.com/item?id=50373308",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "https://layer3intel.com/blog/residential-proxies-white-house-network",
-          "source_url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
+          "fact_text": "https://openai.com/index/introducing-images-2-6/",
+          "source_url": "https://openai.com/index/introducing-images-2-6/",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "https://news.ycombinator.com/item?id=50371246",
-          "source_url": "https://news.ycombinator.com/item?id=50371246",
+          "fact_text": "https://news.ycombinator.com/item?id=50372945",
+          "source_url": "https://news.ycombinator.com/item?id=50372945",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
-          "source_url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
+          "fact_text": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+          "source_url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
           "category": "global_tech_intelligence"
         }
       ],
       "verified_payload": [
+        "https://www.spacex.com/starfall",
+        "https://openai.com/index/introducing-images-2-6/",
+        "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+        "https://icode4.coffee/?p=1746",
         "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/",
+        "https://dbushell.com/2026/11/03/xslt-rip/",
         "https://layer3intel.com/blog/residential-proxies-white-house-network",
         "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
         "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
@@ -346,12 +351,7 @@
         "https://www.bloomberg.com/news/articles/2026-11-03/china-s-byd-doubles-market-share-in-brazil-with-new-plant-eyed",
         "https://go.dev/blog/jsonv2",
         "https://news.ycombinator.com/item?id=50368804",
-        "https://www.anthropic.com/research/provable-inference",
-        "https://www.theguardian.com/business/2026/nov/04/what-can-save-the-british-high-street-rotherham",
-        "https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections",
-        "https://www.tomshardware.com/tech-industry/data-centers/ai-data-centers-comprehensively-defeated-at-us-midterm-elections-45-measures-put-on-the-ballot-as-americans-overwhelmingly-vote-against-developments",
-        "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-        "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/"
+        "https://www.anthropic.com/research/provable-inference"
       ],
       "bayesian_trust_score": 0.99
     },
@@ -360,7 +360,7 @@
       "source_url": "https://remoteok.com/api",
       "status": "HEALED_AND_EXTRACTED",
       "self_healed_strategy": "rea_50x_polyglot_surface",
-      "extraction_latency_ms": 641.43,
+      "extraction_latency_ms": 579.53,
       "discovered_routes": [],
       "item_count": 24,
       "retained_facts": [
@@ -514,7 +514,7 @@
       "source_url": "https://www.arbeitnow.com/api/job-board-api",
       "status": "EMPTY",
       "self_healed_strategy": "rea_50x_polyglot_surface",
-      "extraction_latency_ms": 93.02,
+      "extraction_latency_ms": 94.57,
       "discovered_routes": [],
       "item_count": 0,
       "retained_facts": [],
@@ -524,9 +524,9 @@
     {
       "feed_category": "autonomous_ai_research",
       "source_url": "https://arxiv.org/rss/cs.AI",
-      "status": "EMPTY",
+      "status": "HEALED_AND_EXTRACTED",
       "self_healed_strategy": "rea_50x_polyglot_surface",
-      "extraction_latency_ms": 197.58,
+      "extraction_latency_ms": 313.38,
       "discovered_routes": [
         "http://arxiv.org/schemas/atom",
         "http://purl.org/dc/elements/1.1/",
@@ -534,10 +534,157 @@
         "http://rss.arxiv.org/rss/cs.AI",
         "http://www.w3.org/2005/Atom"
       ],
-      "item_count": 0,
-      "retained_facts": [],
-      "verified_payload": [],
-      "bayesian_trust_score": 0.25
+      "item_count": 25,
+      "retained_facts": [
+        {
+          "fact_text": "Who May Overrule the Agent? Evidence-Gated Authority in LLM Review Institutions",
+          "source_url": "https://arxiv.org/abs/2611.05390",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "Agent Harness Awareness: Turning Verified Telemetry into Operational Control for Tool-Using Agents",
+          "source_url": "https://arxiv.org/abs/2611.05391",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "Uncertainty-Aware Resource Orchestration for Agentic AI Systems",
+          "source_url": "https://arxiv.org/abs/2611.05392",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "Challenge-Aware Knowledge Recruitment with Meta-Agent Supervision for Medical Multi-Agent Reasoning",
+          "source_url": "https://arxiv.org/abs/2611.05393",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "A Feasibility Condition for Confidence-Gated Tiered LLM Inference",
+          "source_url": "https://arxiv.org/abs/2611.05394",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "Towards Robust Long-Lived Agents: Benchmarking Experience Lifecycles in Evolving Environments",
+          "source_url": "https://arxiv.org/abs/2611.05450",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "Can Large Language Models Review the Scientific Literature? A Test Against a 102-Article Benchmark",
+          "source_url": "https://arxiv.org/abs/2611.05459",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "SlackBench: Benchmarking Agents on Collaborative Projects Grounded in Real Code Repositories",
+          "source_url": "https://arxiv.org/abs/2611.05512",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "MA-SafeDiffuser: Safe Multi-Agent Planning with Diffusion Probabilistic Models",
+          "source_url": "https://arxiv.org/abs/2611.05524",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "Towards Efficient Whole Page Ranking with One-Pass Inference",
+          "source_url": "https://arxiv.org/abs/2611.05542",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "Iterated creation, grading, and revision of data science projects by language models",
+          "source_url": "https://arxiv.org/abs/2611.05548",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "Whose Transparency is it Anyway? Understanding Generative AI Transparency Needs and Gaps Across Stakeholders",
+          "source_url": "https://arxiv.org/abs/2611.05549",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "VirtualTrialHarness: Coordinating Agentic Operationalization of Virtual Trial Protocols Across Complex Clinical Schemas",
+          "source_url": "https://arxiv.org/abs/2611.05551",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "AGORA: Reliability-Aware Aggregation of LLM Judges via Item-Response Theory",
+          "source_url": "https://arxiv.org/abs/2611.05556",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "BrainBind: Bridging Synchronized EEG and fMRI through Long-Form Naturalistic Video Representations",
+          "source_url": "https://arxiv.org/abs/2611.05581",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "Anduin: A sybil-resistant agentic marketplace reputation system",
+          "source_url": "https://arxiv.org/abs/2611.05586",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "Verified but Vacuous: Three Failure Surfaces of LLM-Driven Verified Code Generation",
+          "source_url": "https://arxiv.org/abs/2611.05590",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "Hybrid Spark: Adaptive Speculative Decoding That Lets the Content Choose the Drafter",
+          "source_url": "https://arxiv.org/abs/2611.05611",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "ViBench 2.0: A Benchmark for Long-Horizon Software Building",
+          "source_url": "https://arxiv.org/abs/2611.05620",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "Assurance-Conditioned Continuous Authorization for Autonomous AI Agents",
+          "source_url": "https://arxiv.org/abs/2611.05632",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "Route to Remember: Adaptive Memory Selection for LLM Agents",
+          "source_url": "https://arxiv.org/abs/2611.05636",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "Attributing Agent Failures to Their History Needs an Executed Counterfactual: Toward a Reporting Standard",
+          "source_url": "https://arxiv.org/abs/2611.05650",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "Quantifying Trait-State Hierarchy in EEG Foundation Model and Signal Processing Embeddings",
+          "source_url": "https://arxiv.org/abs/2611.05652",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "Grounded but Not Immune: Confirmation Bias in Agent-as-a-judge",
+          "source_url": "https://arxiv.org/abs/2611.05662",
+          "category": "autonomous_ai_research"
+        },
+        {
+          "fact_text": "Combining Relevant Expert Knowledge Using Mixtures of Feedback Fuzzy Cognitive Maps",
+          "source_url": "https://arxiv.org/abs/2611.05664",
+          "category": "autonomous_ai_research"
+        }
+      ],
+      "verified_payload": [
+        "https://arxiv.org/abs/2611.05390",
+        "https://arxiv.org/abs/2611.05391",
+        "https://arxiv.org/abs/2611.05392",
+        "https://arxiv.org/abs/2611.05393",
+        "https://arxiv.org/abs/2611.05394",
+        "https://arxiv.org/abs/2611.05450",
+        "https://arxiv.org/abs/2611.05459",
+        "https://arxiv.org/abs/2611.05512",
+        "https://arxiv.org/abs/2611.05524",
+        "https://arxiv.org/abs/2611.05542",
+        "https://arxiv.org/abs/2611.05548",
+        "https://arxiv.org/abs/2611.05549",
+        "https://arxiv.org/abs/2611.05551",
+        "https://arxiv.org/abs/2611.05556",
+        "https://arxiv.org/abs/2611.05581",
+        "https://arxiv.org/abs/2611.05586",
+        "https://arxiv.org/abs/2611.05590",
+        "https://arxiv.org/abs/2611.05611",
+        "https://arxiv.org/abs/2611.05620",
+        "https://arxiv.org/abs/2611.05632"
+      ],
+      "bayesian_trust_score": 0.975
     }
   ]
 }
