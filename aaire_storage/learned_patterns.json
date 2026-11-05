@@ -1,61 +1,40 @@
 {
-  "system_architecture_blueprint": {
-    "agent_type": "Architect-Agent",
-    "runs": 31,
-    "successes": 31,
-    "success_rate": 1.0,
-    "avg_duration_ms": 0.41,
-    "last_status": "SUCCESS",
-    "last_updated": "2026-11-05T00:31:43.324525+00:00"
-  },
-  "autonomous_code_synthesis": {
-    "agent_type": "Code-Generator",
-    "runs": 60,
-    "successes": 60,
-    "success_rate": 1.0,
-    "avg_duration_ms": 0.27,
-    "last_status": "SUCCESS",
-    "last_updated": "2026-11-05T00:31:43.326902+00:00"
-  },
-  "heuristic_performance_optimization": {
-    "agent_type": "Optimizer-Agent",
-    "runs": 60,
-    "successes": 60,
-    "success_rate": 1.0,
-    "avg_duration_ms": 0.24,
-    "last_status": "SUCCESS",
-    "last_updated": "2026-11-05T00:31:43.328475+00:00"
-  },
-  "multi_agent_qa_consensus": {
-    "agent_type": "QA-Verifier",
-    "runs": 60,
-    "successes": 60,
-    "success_rate": 1.0,
-    "avg_duration_ms": 0.24,
-    "last_status": "SUCCESS",
-    "last_updated": "2026-11-05T00:31:43.329932+00:00"
-  },
-  "security_boundary_audit": {
-    "agent_type": "Security-Auditor",
-    "runs": 30,
-    "successes": 30,
-    "success_rate": 1.0,
-    "avg_duration_ms": 0.69,
-    "last_status": "SUCCESS",
-    "last_updated": "2026-11-04T22:07:10.669591+00:00"
-  },
-  "v7_genetic_champions": {
-    "sum_benchmark": {
-      "variant": "builtin_fast",
-      "elapsed_ns": 4980,
-      "fitness": 160771.7042,
-      "code": "def compute(arr):\n    return sum(arr)"
-    },
-    "zero_rot_dom_extractor": {
-      "variant": "strategy_hybrid_merge",
-      "elapsed_ns": 20178,
-      "fitness": 23890.2958,
-      "code": "def parse_dom(data):\n    combined = data['headings'] + data['links']\n    clean = [x for x in combined if len(x) > 3]\n    return list(dict.fromkeys(clean))[:25]"
-    }
+  "updated_at": 1793838787.09,
+  "top_learned_tokens": {
+    "ai": 15,
+    "manager": 8,
+    "hn": 6,
+    "engineer": 6,
+    "https": 5,
+    "us": 4,
+    "cloud": 4,
+    "client": 4,
+    "agentic": 3,
+    "conductor": 3,
+    "joining": 3,
+    "meta": 3,
+    "yc": 3,
+    "media": 3,
+    "inference": 3,
+    "show": 3,
+    "after": 3,
+    "your": 3,
+    "amp": 3,
+    "online": 3,
+    "senior": 3,
+    "software": 3,
+    "residential": 2,
+    "proxies": 2,
+    "detected": 2,
+    "white": 2,
+    "house": 2,
+    "network": 2,
+    "ripple-65b": 2,
+    "preview": 2,
+    "u.s.": 2,
+    "open-weight": 2,
+    "sota": 2,
+    "coding": 2,
+    "local": 2
   }
 }

@@ -1,25 +1,165 @@
 {
-  "oracle_version": "AAIRE-v7.0-ZeroRot-Enterprise",
-  "generated_at_utc": 1793838703.83,
+  "oracle_version": "AAIRE-v10.0-REA-50X-Autonomous",
+  "generated_at_utc": 1793838787.103,
   "monetization_ready": true,
   "cryptographic_proof": {
-    "merkle_block_index": 123,
-    "merkle_root": "c0415b346e90a4fb75eecae861700db67d26b4a862afd86cc7c8cce1286a16d8",
-    "block_hash": "bc31cb6cda5b57983e10f3862157c6a7e885a5aa2534c974bb2019cfb8a0bd3b",
-    "hmac_sha256_signature": "954c1696366fd38d5cf59227af4098b2040aa76315571d7084ad7cac8448d269"
+    "merkle_block_index": 100,
+    "merkle_root": "1f19251c1152a2bac9c3489d32676010d6ae8ad7be4de8e525fbd69b6455256e",
+    "block_hash": "4679a3b1c06ae48da1d1fb8bd2757939811f6032dba14bb329a44d892d993161",
+    "hmac_sha256_signature": "1ebe205c7a6e3cc33e081ee97207ed448541b9ce5401a7f43105334646fff72d"
   },
-  "total_sources": 3,
+  "total_sources": 5,
+  "total_retained_facts": 74,
   "feeds": [
     {
       "feed_category": "global_tech_intelligence",
-      "source_url": "https://news.ycombinator.com/",
+      "source_url": "https://news.ycombinator.com/rss",
       "status": "HEALED_AND_EXTRACTED",
-      "self_healed_strategy": "strategy_hybrid_merge",
-      "extraction_latency_ns": 18615,
-      "bayesian_trust_score": 0.9057,
+      "self_healed_strategy": "rea_50x_polyglot_surface",
+      "extraction_latency_ms": 255.52,
+      "discovered_routes": [
+        "https://news.ycombinator.com/item?id=50337225",
+        "https://news.ycombinator.com/item?id=50338474",
+        "https://news.ycombinator.com/item?id=50339183",
+        "https://news.ycombinator.com/item?id=50356791",
+        "https://news.ycombinator.com/item?id=50362905",
+        "https://news.ycombinator.com/item?id=50363019",
+        "https://news.ycombinator.com/item?id=50364336",
+        "https://news.ycombinator.com/item?id=50365780",
+        "https://news.ycombinator.com/item?id=50366117",
+        "https://news.ycombinator.com/item?id=50366522",
+        "https://news.ycombinator.com/item?id=50366853",
+        "https://news.ycombinator.com/item?id=50366863"
+      ],
       "item_count": 25,
+      "retained_facts": [
+        {
+          "fact_text": "Residential proxies detected on White House network",
+          "source_url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Introducing Images 2.6",
+          "source_url": "https://openai.com/index/introducing-images-2-6/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "AI is forcing us to pay off 40 years of technical debt",
+          "source_url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+          "source_url": "https://www.ricursive.com/ripple",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Local privilege escalation vulnerabilities in Linux",
+          "source_url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Insects don&#x27;t swarm at LED lights",
+          "source_url": "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Hacking the Xbox 360 Hypervisor Part 3: Bad Update Improvements",
+          "source_url": "https://icode4.coffee/?p=1746",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "A new Go API for JSON",
+          "source_url": "https://go.dev/blog/jsonv2",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Kimi K3.1 Pro model weights are out",
+          "source_url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB&#x2F;s",
+          "source_url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Conductor is joining Meta",
+          "source_url": "https://www.conductor.build/announcement",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Launch HN: Kino AI (YC S23) – AI media manager and video editor",
+          "source_url": "https://news.ycombinator.com/item?id=50368804",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Progress on provable inference for large language models",
+          "source_url": "https://www.anthropic.com/research/provable-inference",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Show HN: After a decade of reversing, I got co-op working in DOS Wing Commander",
+          "source_url": "https://fireflyk64.github.io/wcmulti/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+          "source_url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Bf16 might be freezing your weight updates",
+          "source_url": "https://lacuna.tiptreesystems.com/paper/bf16-might-be-freezing-your-weight-updates/art_487b1ed949e745a6ae0c42815b8d3cba",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Guerrilla bike lanes: San Francisco makes illicit infrastructure permanent (2016)",
+          "source_url": "https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Is Curiosity Good for Us?",
+          "source_url": "https://www.lrb.co.uk/the-paper/v48/n20/adam-phillips/is-curiosity-good-for-us",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Basically no one is using AI agents for their DoorDash orders",
+          "source_url": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Show HN: Gauge – Open-Source CLI to recursively improve your docs",
+          "source_url": "https://github.com/gauge-sh/gauge-cli",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "OpenAI to acquire Pierre Computer Company",
+          "source_url": "https://openai.com/index/openai-to-acquire-pierre/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Ask HN: What&#x27;s your current AI agentic setup?",
+          "source_url": "https://news.ycombinator.com/item?id=50366117",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "A wave of plastic-free coffee pods and machines",
+          "source_url": "https://www.cnn.com/2026/11/02/food/coffee-machine-plastic-free",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Death Comes for XSLT",
+          "source_url": "https://dbushell.com/2026/11/03/xslt-rip/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Tencent Hy4",
+          "source_url": "https://hy.tencent.ai/research/hy4",
+          "category": "global_tech_intelligence"
+        }
+      ],
       "verified_payload": [
-        "https://news.ycombinator.com",
         "https://layer3intel.com/blog/residential-proxies-white-house-network",
         "https://openai.com/index/introducing-images-2-6/",
         "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
@@ -31,66 +171,373 @@
         "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
         "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
         "https://www.conductor.build/announcement",
+        "https://news.ycombinator.com/item?id=50368804",
         "https://www.anthropic.com/research/provable-inference",
-        "https://lacuna.tiptreesystems.com/paper/bf16-might-be-freezing-your-weight-updates/art_487b1ed949e745a6ae0c42815b8d3cba",
         "https://fireflyk64.github.io/wcmulti/",
         "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+        "https://lacuna.tiptreesystems.com/paper/bf16-might-be-freezing-your-weight-updates/art_487b1ed949e745a6ae0c42815b8d3cba",
         "https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/",
         "https://www.lrb.co.uk/the-paper/v48/n20/adam-phillips/is-curiosity-good-for-us",
         "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/",
-        "https://github.com/gauge-sh/gauge-cli",
-        "https://openai.com/index/openai-to-acquire-pierre/",
-        "https://www.cnn.com/2026/11/02/food/coffee-machine-plastic-free",
-        "https://dbushell.com/2026/11/03/xslt-rip/",
-        "https://hy.tencent.ai/research/hy4",
-        "https://squid-protocol.github.io/gitgalaxy/museum-of-code/doom-dna/"
-      ]
+        "https://github.com/gauge-sh/gauge-cli"
+      ],
+      "bayesian_trust_score": 0.99
     },
     {
-      "feed_category": "remote_hiring_signals",
-      "source_url": "https://remoteok.com/",
-      "status": "FETCH_FAILED",
-      "self_healed_strategy": "fallback",
-      "extraction_latency_ns": 0,
-      "bayesian_trust_score": 0.6667,
-      "item_count": 0,
-      "verified_payload": []
-    },
-    {
-      "feed_category": "python_ecosystem_updates",
-      "source_url": "https://pypi.org/",
+      "feed_category": "global_tech_intelligence",
+      "source_url": "https://hnrss.org/newest?points=50",
       "status": "HEALED_AND_EXTRACTED",
-      "self_healed_strategy": "strategy_hybrid_merge",
-      "extraction_latency_ns": 20178,
-      "bayesian_trust_score": 0.9057,
+      "self_healed_strategy": "rea_50x_polyglot_surface",
+      "extraction_latency_ms": 1353.87,
+      "discovered_routes": [
+        "http://purl.org/dc/elements/1.1/",
+        "http://www.w3.org/2005/Atom",
+        "https://blog.kagi.com/education-should-not-be-held-for-ransom",
+        "https://fireflyk64.github.io/wcmulti/",
+        "https://go.dev/blog/jsonv2",
+        "https://hnrss.org/newest?points=50",
+        "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+        "https://kino.ai",
+        "https://kino.ai/launch-video",
+        "https://kino.ai/walkthrough-video",
+        "https://ladybird.org/newsletter/2026-10-31/",
+        "https://layer3intel.com/blog/residential-proxies-white-house-network"
+      ],
       "item_count": 25,
+      "retained_facts": [
+        {
+          "fact_text": "Everything is an AI scam now",
+          "source_url": "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Residential proxies detected on White House network",
+          "source_url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
+          "source_url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Insects don't swarm at LED lights",
+          "source_url": "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+          "source_url": "https://www.ricursive.com/ripple",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Show HN: After a decade of reversing, I got co-op working in DOS Wing Commander",
+          "source_url": "https://fireflyk64.github.io/wcmulti/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Conductor is joining Meta",
+          "source_url": "https://www.conductor.build/changelog/0.93.0-conductor-is-joining-meta",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Have I befriended a murderer?",
+          "source_url": "https://longreads.com/2026/11/03/murder-friendship-doubt/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Education shouldn't be held for ransom",
+          "source_url": "https://blog.kagi.com/education-should-not-be-held-for-ransom",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Conductor is joining Meta",
+          "source_url": "https://www.conductor.build/announcement",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "This Month in Ladybird – October 2026",
+          "source_url": "https://ladybird.org/newsletter/2026-10-31/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "BYD doubles its Brazil market share to 9.7% a year after opening its local plant",
+          "source_url": "https://www.bloomberg.com/news/articles/2026-11-03/china-s-byd-doubles-market-share-in-brazil-with-new-plant-eyed",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "A new Go API for JSON",
+          "source_url": "https://go.dev/blog/jsonv2",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Launch HN: Kino AI (YC S23) – AI media manager and video editor",
+          "source_url": "https://news.ycombinator.com/item?id=50368804",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Progress on provable inference for large language models",
+          "source_url": "https://www.anthropic.com/research/provable-inference",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "'It's just vape, nail, charity shops': Can anything save UK high street?",
+          "source_url": "https://www.theguardian.com/business/2026/nov/04/what-can-save-the-british-high-street-rotherham",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "AMD expects to outsell Intel in Q4 for the first time in history",
+          "source_url": "https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "AI data centers comprehensively defeated at US midterm elections",
+          "source_url": "https://www.tomshardware.com/tech-industry/data-centers/ai-data-centers-comprehensively-defeated-at-us-midterm-elections-45-measures-put-on-the-ballot-as-americans-overwhelmingly-vote-against-developments",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Kimi K3.1 Pro model weights are out",
+          "source_url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "YC's Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
+          "source_url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Article URL: https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/",
+          "source_url": "https://hnrss.org/newest?points=50",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "https://news.ycombinator.com/item?id=50371508",
+          "source_url": "https://news.ycombinator.com/item?id=50371508",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "https://layer3intel.com/blog/residential-proxies-white-house-network",
+          "source_url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "https://news.ycombinator.com/item?id=50371246",
+          "source_url": "https://news.ycombinator.com/item?id=50371246",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
+          "source_url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
+          "category": "global_tech_intelligence"
+        }
+      ],
       "verified_payload": [
-        "Find, install and publish Python packages with the Python Package Index",
-        "Help",
-        "About PyPI",
-        "Contributing to PyPI",
-        "Using PyPI",
-        "https://pypi.org/",
-        "https://blog.pypi.org",
-        "https://docs.pypi.org/",
-        "https://packaging.python.org/tutorials/installing-packages/",
-        "https://packaging.python.org/tutorials/packaging-projects/",
-        "https://www.python.org/psf/",
-        "https://status.python.org/",
-        "https://donate.pypi.org",
-        "https://docs.pypi.org/about/getting-help/",
-        "https://packaging.python.org/",
-        "https://dtdg.co/pypi",
-        "https://docs.pypi.org/about/contributing/#reporting-bugs",
-        "https://github.com/pypi/warehouse",
-        "https://hosted.weblate.org/projects/pypa/warehouse/",
-        "https://github.com/pypi/warehouse/graphs/contributors",
-        "https://policies.python.org/pypi.org/Terms-of-Service/",
-        "https://policies.python.org/python.org/code-of-conduct/",
-        "https://policies.python.org/pypi.org/Privacy-Notice/",
-        "https://policies.python.org/pypi.org/Acceptable-Use-Policy/",
-        "https://www.anthropic.com/"
-      ]
+        "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/",
+        "https://layer3intel.com/blog/residential-proxies-white-house-network",
+        "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
+        "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
+        "https://www.ricursive.com/ripple",
+        "https://fireflyk64.github.io/wcmulti/",
+        "https://www.conductor.build/changelog/0.93.0-conductor-is-joining-meta",
+        "https://longreads.com/2026/11/03/murder-friendship-doubt/",
+        "https://blog.kagi.com/education-should-not-be-held-for-ransom",
+        "https://www.conductor.build/announcement",
+        "https://ladybird.org/newsletter/2026-10-31/",
+        "https://www.bloomberg.com/news/articles/2026-11-03/china-s-byd-doubles-market-share-in-brazil-with-new-plant-eyed",
+        "https://go.dev/blog/jsonv2",
+        "https://news.ycombinator.com/item?id=50368804",
+        "https://www.anthropic.com/research/provable-inference",
+        "https://www.theguardian.com/business/2026/nov/04/what-can-save-the-british-high-street-rotherham",
+        "https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections",
+        "https://www.tomshardware.com/tech-industry/data-centers/ai-data-centers-comprehensively-defeated-at-us-midterm-elections-45-measures-put-on-the-ballot-as-americans-overwhelmingly-vote-against-developments",
+        "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+        "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/"
+      ],
+      "bayesian_trust_score": 0.99
+    },
+    {
+      "feed_category": "verified_job_openings",
+      "source_url": "https://remoteok.com/api",
+      "status": "HEALED_AND_EXTRACTED",
+      "self_healed_strategy": "rea_50x_polyglot_surface",
+      "extraction_latency_ms": 641.43,
+      "discovered_routes": [],
+      "item_count": 24,
+      "retained_facts": [
+        {
+          "fact_text": "Entry Level Scheduling &amp; Coordinating Reservations Online",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-entry-level-scheduling-amp-coordinating-reservations-online-destination-careers-1137680",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "M&A Praktikum Intern",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-ma-praktikum-intern-vogel-1137677",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "Paid Media Manager US",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-paid-media-manager-us-kyra-1137675",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "Sales Operations Analyst",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-sales-operations-analyst-calabrio-1137674",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "Tech lead",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-tech-lead-ringbook-limited-1137673",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "Senior Property Manager ENG",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-senior-property-manager-eng-staffright-1137624",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "Tax Manager Private Client",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-tax-manager-private-client-aprio-1137622",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "Client Accounting Division Manager",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-client-accounting-division-manager-burkland-associates-1137621",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "AI ML Engineer",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-ai-ml-engineer-docusketch-1137619",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "Software Engineer Infrastructure",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-software-engineer-infrastructure-sodalis-inc-1137614",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "Team Lead Account Executive",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-team-lead-account-executive-capmo-1137613",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "Virtual Destination Wedding Coordinator",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-virtual-destination-wedding-coordinator-destination-careers-1137611",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "Partner Operations Manager",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-partner-operations-manager-mecka-1137609",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "Scientific Account Executive",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-scientific-account-executive-adaptyv-1137608",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "Contract Recruiter",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-contract-recruiter-cai-1137607",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "AWS Cloud Solutions Architect",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-aws-cloud-solutions-architect-cloudary-sas-1137606",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "Online Client Support &amp; Travel Booking We Will Train You",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-online-client-support-amp-travel-booking-we-will-train-you-destination-careers-1137604",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "Country Manager Canada",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-country-manager-canada-polaroid-1137602",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "Client Support &amp; Travel Booking Online",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-client-support-amp-travel-booking-online-destination-careers-1137601",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "Cloud Engineer Automation",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-cloud-engineer-automation-smile-digital-health-1137600",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "Front End Developer",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-front-end-developer-edconic-1137597",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "Senior Software Engineer LATAM",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-latam-wagmo-1137572",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "Senior Software Engineer",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-klardaten-1137571",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "Solutions Engineer",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-solutions-engineer-onebrief-1137568",
+          "category": "verified_job_openings"
+        }
+      ],
+      "verified_payload": [
+        "https://remoteOK.com/remote-jobs/remote-entry-level-scheduling-amp-coordinating-reservations-online-destination-careers-1137680",
+        "https://remoteOK.com/remote-jobs/remote-ma-praktikum-intern-vogel-1137677",
+        "https://remoteOK.com/remote-jobs/remote-paid-media-manager-us-kyra-1137675",
+        "https://remoteOK.com/remote-jobs/remote-sales-operations-analyst-calabrio-1137674",
+        "https://remoteOK.com/remote-jobs/remote-tech-lead-ringbook-limited-1137673",
+        "https://remoteOK.com/remote-jobs/remote-senior-property-manager-eng-staffright-1137624",
+        "https://remoteOK.com/remote-jobs/remote-tax-manager-private-client-aprio-1137622",
+        "https://remoteOK.com/remote-jobs/remote-client-accounting-division-manager-burkland-associates-1137621",
+        "https://remoteOK.com/remote-jobs/remote-ai-ml-engineer-docusketch-1137619",
+        "https://remoteOK.com/remote-jobs/remote-software-engineer-infrastructure-sodalis-inc-1137614",
+        "https://remoteOK.com/remote-jobs/remote-team-lead-account-executive-capmo-1137613",
+        "https://remoteOK.com/remote-jobs/remote-virtual-destination-wedding-coordinator-destination-careers-1137611",
+        "https://remoteOK.com/remote-jobs/remote-partner-operations-manager-mecka-1137609",
+        "https://remoteOK.com/remote-jobs/remote-scientific-account-executive-adaptyv-1137608",
+        "https://remoteOK.com/remote-jobs/remote-contract-recruiter-cai-1137607",
+        "https://remoteOK.com/remote-jobs/remote-aws-cloud-solutions-architect-cloudary-sas-1137606",
+        "https://remoteOK.com/remote-jobs/remote-online-client-support-amp-travel-booking-we-will-train-you-destination-careers-1137604",
+        "https://remoteOK.com/remote-jobs/remote-country-manager-canada-polaroid-1137602",
+        "https://remoteOK.com/remote-jobs/remote-client-support-amp-travel-booking-online-destination-careers-1137601",
+        "https://remoteOK.com/remote-jobs/remote-cloud-engineer-automation-smile-digital-health-1137600"
+      ],
+      "bayesian_trust_score": 0.96
+    },
+    {
+      "feed_category": "verified_job_openings",
+      "source_url": "https://www.arbeitnow.com/api/job-board-api",
+      "status": "EMPTY",
+      "self_healed_strategy": "rea_50x_polyglot_surface",
+      "extraction_latency_ms": 93.02,
+      "discovered_routes": [],
+      "item_count": 0,
+      "retained_facts": [],
+      "verified_payload": [],
+      "bayesian_trust_score": 0.25
+    },
+    {
+      "feed_category": "autonomous_ai_research",
+      "source_url": "https://arxiv.org/rss/cs.AI",
+      "status": "EMPTY",
+      "self_healed_strategy": "rea_50x_polyglot_surface",
+      "extraction_latency_ms": 197.58,
+      "discovered_routes": [
+        "http://arxiv.org/schemas/atom",
+        "http://purl.org/dc/elements/1.1/",
+        "http://purl.org/rss/1.0/modules/content/",
+        "http://rss.arxiv.org/rss/cs.AI",
+        "http://www.w3.org/2005/Atom"
+      ],
+      "item_count": 0,
+      "retained_facts": [],
+      "verified_payload": [],
+      "bayesian_trust_score": 0.25
     }
   ]
 }
