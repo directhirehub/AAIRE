@@ -1,41 +1,91 @@
 {
   "oracle_version": "AAIRE-v10.0-REA-50X-Autonomous",
-  "generated_at_utc": 1793903739.95,
+  "generated_at_utc": 1793924985.077,
   "monetization_ready": true,
   "cryptographic_proof": {
     "merkle_block_index": 100,
-    "merkle_root": "9513bcc5775b219e617668976be79c79ee88fdbfae269e12e13f6c41d82fdb77",
-    "block_hash": "7ef53061c72b6e42d28e8e631f5c40bf7b015a21b17ff4bd322f4fab6b045c93",
-    "hmac_sha256_signature": "4a83375dbb0df172eb055556a820c6de4ea845b0ccb6a59275ddf4907c2c4101"
+    "merkle_root": "f04ad4ee5e8fcc8217ac745ede49b8db4c52fbc048c0d300ccc4d5eae8bcd4ce",
+    "block_hash": "72e3cadf3eaa203388c6a892ec7a4ceccaf448a510f543275aa4b87b5f52d2c7",
+    "hmac_sha256_signature": "0d7ed99297e785b3b01e3e2bd7da3ab36010fad1837ec6b291c50d6d23ecd84b"
   },
   "total_sources": 5,
-  "total_retained_facts": 73,
+  "total_retained_facts": 98,
   "feeds": [
     {
       "feed_category": "global_tech_intelligence",
       "source_url": "https://news.ycombinator.com/rss",
       "status": "HEALED_AND_EXTRACTED",
       "self_healed_strategy": "rea_50x_polyglot_surface",
-      "extraction_latency_ms": 104.62,
+      "extraction_latency_ms": 214.78,
       "discovered_routes": [
         "https://news.ycombinator.com/item?id=50349667",
-        "https://news.ycombinator.com/item?id=50352846",
         "https://news.ycombinator.com/item?id=50368208",
-        "https://news.ycombinator.com/item?id=50375354",
         "https://news.ycombinator.com/item?id=50376313",
-        "https://news.ycombinator.com/item?id=50377078",
-        "https://news.ycombinator.com/item?id=50377821",
         "https://news.ycombinator.com/item?id=50377976",
         "https://news.ycombinator.com/item?id=50378228",
         "https://news.ycombinator.com/item?id=50378508",
         "https://news.ycombinator.com/item?id=50378571",
-        "https://news.ycombinator.com/item?id=50378625"
+        "https://news.ycombinator.com/item?id=50378643",
+        "https://news.ycombinator.com/item?id=50378942",
+        "https://news.ycombinator.com/item?id=50379249",
+        "https://news.ycombinator.com/item?id=50379576",
+        "https://news.ycombinator.com/item?id=50379704"
       ],
       "item_count": 24,
       "retained_facts": [
         {
+          "fact_text": "Claude Code sends your email address to websites",
+          "source_url": "https://github.com/anthropics/claude-code/issues/107757",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Search for everyone",
+          "source_url": "https://kagi.com/changelog#11820",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "MS Paint Remote Code Execution Vulnerability",
+          "source_url": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
+          "category": "global_tech_intelligence"
+        },
+        {
           "fact_text": "Alpine Linux Security Advisory: OpenSSH-server password authentication bypass",
           "source_url": "https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "The Hackintosh Reborn",
+          "source_url": "https://www.naut.ca/blog/2026/11/05/the-hackintosh-reborn-with-ai/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Tencent Launches Hy4, One of the Leading Open-Source AI Models",
+          "source_url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Window Sweaters",
+          "source_url": "https://github.com/saragordic/window-sweaters",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Inkling 2 Small",
+          "source_url": "https://thinkingmachines.ai/news/inkling-2-small/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Launch HN: Rivet (YC W23) – Scale and Orchestrate Agents on S3",
+          "source_url": "https://github.com/rivet-dev/rivet",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Goodbye from Salon",
+          "source_url": "https://www.salon.com/2026/11/05/goodbye-from-salon/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Show HN: A decent text-to-image model trained for ~$20K (Apache 2.0 Weights)",
+          "source_url": "https://www.linum.ai/field-notes/pjit-21k",
           "category": "global_tech_intelligence"
         },
         {
@@ -49,38 +99,18 @@
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Window Sweaters",
-          "source_url": "https://github.com/saragordic/window-sweaters",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Launch HN: Rivet (YC W23) – Scale and Orchestrate Agents on S3",
-          "source_url": "https://github.com/rivet-dev/rivet",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "My psychophysics as a bilateral cochlear implant user",
-          "source_url": "https://claude.ai/artifact/L8qsMc3SorytGW3LA81nYf",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "The Lisp curse, now coming to your ecosystem",
-          "source_url": "https://javahippie.net/programming/llm/2026/03/05/the-lisp-curse-coming-to-your-ecosystem.html",
-          "category": "global_tech_intelligence"
-        },
-        {
-          "fact_text": "Bild AI (YC W25) Is Hiring Founding Product Engineers",
-          "source_url": "https://www.ycombinator.com/companies/bild-ai/jobs",
-          "category": "global_tech_intelligence"
-        },
-        {
           "fact_text": "Download your favourite YouTube videos",
           "source_url": "https://criminallyvulgar.dev/you-should-absolutely-download-your-favourite-youtube-videos/",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "OpenSSH 10.6p2 Critical workaround for alpine without PAM",
-          "source_url": "https://www.openssh.org/releasenotes.html#10.6p2",
+          "fact_text": "Show HN: Firenook – Firebase emulators in Rust: 40× faster writes, 10× less RAM",
+          "source_url": "https://firenook.dev/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Introducing Pangram Image 1.0",
+          "source_url": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
           "category": "global_tech_intelligence"
         },
         {
@@ -89,23 +119,23 @@
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "The Stacks Project, Formalized in Lean",
-          "source_url": "https://axiommath.ai/research/the-stacks-project-formalized/",
+          "fact_text": "My psychophysics as a bilateral cochlear implant user",
+          "source_url": "https://claude.ai/artifact/L8qsMc3SorytGW3LA81nYf",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Show HN: A decent text-to-image model trained for ~$20K (Apache 2.0 Weights)",
-          "source_url": "https://www.linum.ai/field-notes/pjit-21k",
+          "fact_text": "OpenSSH 10.6p2 Critical workaround for alpine without PAM",
+          "source_url": "https://www.openssh.org/releasenotes.html#10.6p2",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "MCP Explained",
-          "source_url": "https://mcp-explained.com/",
+          "fact_text": "Bild AI (YC W25) Is Hiring Founding Product Engineers",
+          "source_url": "https://www.ycombinator.com/companies/bild-ai/jobs",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Building a Multi-Agent System from Scratch: Architecture Patterns",
-          "source_url": "https://kadhar.dev/blog/multi-agent-systems-from-scratch",
+          "fact_text": "Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue",
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
           "category": "global_tech_intelligence"
         },
         {
@@ -114,13 +144,125 @@
           "category": "global_tech_intelligence"
         },
         {
+          "fact_text": "GPT-6 Astra covertly underperforms on safety research",
+          "source_url": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Brazilian Credit Guarantor Fund Data Breach Affecting PII and Payout Data",
+          "source_url": "https://www.fgc.org.br/comunicado",
+          "category": "global_tech_intelligence"
+        }
+      ],
+      "verified_payload": [
+        "https://github.com/anthropics/claude-code/issues/107757",
+        "https://kagi.com/changelog#11820",
+        "https://www.cve.org/CVERecord?id=CVE-2026-83844",
+        "https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/",
+        "https://www.naut.ca/blog/2026/11/05/the-hackintosh-reborn-with-ai/",
+        "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
+        "https://github.com/saragordic/window-sweaters",
+        "https://thinkingmachines.ai/news/inkling-2-small/",
+        "https://github.com/rivet-dev/rivet",
+        "https://www.salon.com/2026/11/05/goodbye-from-salon/",
+        "https://www.linum.ai/field-notes/pjit-21k",
+        "https://motorolanews.com/motorola-signature-27-2/",
+        "https://servo.org/blog/2026/11/05/september-in-servo/",
+        "https://criminallyvulgar.dev/you-should-absolutely-download-your-favourite-youtube-videos/",
+        "https://firenook.dev/",
+        "https://www.pangram.com/blog/introducing-pangram-image-1-0",
+        "https://rakhim.exotext.com/i-wish-tech-companies-knew-more-about-me",
+        "https://claude.ai/artifact/L8qsMc3SorytGW3LA81nYf",
+        "https://www.openssh.org/releasenotes.html#10.6p2",
+        "https://www.ycombinator.com/companies/bild-ai/jobs"
+      ],
+      "bayesian_trust_score": 0.99
+    },
+    {
+      "feed_category": "global_tech_intelligence",
+      "source_url": "https://hnrss.org/newest?points=50",
+      "status": "HEALED_AND_EXTRACTED",
+      "self_healed_strategy": "rea_50x_polyglot_surface",
+      "extraction_latency_ms": 395.1,
+      "discovered_routes": [
+        "http://purl.org/dc/elements/1.1/",
+        "http://www.w3.org/2005/Atom",
+        "https://archive.org/details/howtoliewithstat00huff",
+        "https://axiommath.ai/research/the-stacks-project-formalized/",
+        "https://claude.ai/artifact/L8qsMc3SorytGW3LA81nYf",
+        "https://finlaws.substack.com/p/25t-has-been-wiped-from-us-stocks",
+        "https://github.com/anthropics/claude-code/issues/107757",
+        "https://github.com/rivet-dev/rivet",
+        "https://github.com/saragordic/window-sweaters",
+        "https://hnrss.org/newest?points=50",
+        "https://kagi.com/changelog#11820",
+        "https://motorolanews.com/motorola-signature-27-2/"
+      ],
+      "item_count": 25,
+      "retained_facts": [
+        {
+          "fact_text": "Claude Code sends your email address to websites",
+          "source_url": "https://github.com/anthropics/claude-code/issues/107757",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "$2.5T has been wiped from US stocks",
+          "source_url": "https://finlaws.substack.com/p/25t-has-been-wiped-from-us-stocks",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "MS Paint Remote Code Execution Vulnerability",
+          "source_url": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "California Gov Newsom commutes death sentences for all 548 people on death row",
+          "source_url": "https://www.bbc.com/news/articles/cqrkyyd2j8mvo",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Tencent Launches Hy4, One of the Leading Open-Source AI Models",
+          "source_url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Search for everyone",
+          "source_url": "https://kagi.com/changelog#11820",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Goodbye from Salon",
+          "source_url": "https://www.salon.com/2026/11/05/goodbye-from-salon/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Hungary: Communist-era files released, up to 60k former agents revealed",
+          "source_url": "https://www.euronews.com/2026/11/04/hungary-communist-era-files-opened-up-to-60000-former-agents-revealed",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "The Hackintosh Reborn",
+          "source_url": "https://www.naut.ca/blog/2026/11/05/the-hackintosh-reborn-with-ai/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "How to Lie With Statistics (1954)",
+          "source_url": "https://archive.org/details/howtoliewithstat00huff",
+          "category": "global_tech_intelligence"
+        },
+        {
           "fact_text": "Nasdaq Sinks 5% as Investors Retreat from AI Trade After Election",
           "source_url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "We can do better than line-buffered output",
-          "source_url": "https://nullprogram.com/blog/2026/11/05/",
+          "fact_text": "My gym forced a social media down my throat. So I reverse-engineered its app",
+          "source_url": "https://shayon.work/blog/reverse-engineering-gym-pass",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Launch HN: Rivet (YC W23) – Scale and Orchestrate Agents on S3",
+          "source_url": "https://github.com/rivet-dev/rivet",
           "category": "global_tech_intelligence"
         },
         {
@@ -129,72 +271,104 @@
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "GPT-6 Astra covertly underperforms on safety research",
-          "source_url": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/",
+          "fact_text": "Window Sweaters",
+          "source_url": "https://github.com/saragordic/window-sweaters",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Baidu released ERNIE 5.5 Flash Base",
-          "source_url": "https://ernie.baidu.com/release/ernie-5-5-flash-base/",
+          "fact_text": "Vibe Coding Keypad",
+          "source_url": "https://www.keychron.com/products/keychron-f4-he-8k-vibe-coding-keypad",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Show HN: Stroq – a local audit of what your coding agent did and why",
-          "source_url": "https://github.com/AGGIB/Stroq",
+          "fact_text": "Paraguay bank collapses with half of population's savings",
+          "source_url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/paraguay-bank-collapses-with-half-of-populations-savings",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Lemmings CSS Animation",
-          "source_url": "https://markblah.github.io/lemmings/",
+          "fact_text": "My psychophysics as a bilateral cochlear implant user",
+          "source_url": "https://claude.ai/artifact/L8qsMc3SorytGW3LA81nYf",
           "category": "global_tech_intelligence"
         },
         {
-          "fact_text": "Nordstjernen, Northstar, Southstar: minimalist webbrowsers in C and Rust",
-          "source_url": "https://nordstjernen.org/",
+          "fact_text": "The Stacks Project, Formalized in Lean",
+          "source_url": "https://axiommath.ai/research/the-stacks-project-formalized/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Motorola Signature 27 with GrapheneOS support",
+          "source_url": "https://motorolanews.com/motorola-signature-27-2/",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "Article URL: https://github.com/anthropics/claude-code/issues/107757",
+          "source_url": "https://hnrss.org/newest?points=50",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "https://news.ycombinator.com/item?id=50385272",
+          "source_url": "https://news.ycombinator.com/item?id=50385272",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "https://finlaws.substack.com/p/25t-has-been-wiped-from-us-stocks",
+          "source_url": "https://finlaws.substack.com/p/25t-has-been-wiped-from-us-stocks",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "https://news.ycombinator.com/item?id=50384822",
+          "source_url": "https://news.ycombinator.com/item?id=50384822",
+          "category": "global_tech_intelligence"
+        },
+        {
+          "fact_text": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
+          "source_url": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
           "category": "global_tech_intelligence"
         }
       ],
       "verified_payload": [
-        "https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/",
-        "https://motorolanews.com/motorola-signature-27-2/",
-        "https://servo.org/blog/2026/11/05/september-in-servo/",
-        "https://github.com/saragordic/window-sweaters",
-        "https://github.com/rivet-dev/rivet",
-        "https://claude.ai/artifact/L8qsMc3SorytGW3LA81nYf",
-        "https://javahippie.net/programming/llm/2026/03/05/the-lisp-curse-coming-to-your-ecosystem.html",
-        "https://www.ycombinator.com/companies/bild-ai/jobs",
-        "https://criminallyvulgar.dev/you-should-absolutely-download-your-favourite-youtube-videos/",
-        "https://www.openssh.org/releasenotes.html#10.6p2",
-        "https://rakhim.exotext.com/i-wish-tech-companies-knew-more-about-me",
-        "https://axiommath.ai/research/the-stacks-project-formalized/",
-        "https://www.linum.ai/field-notes/pjit-21k",
-        "https://mcp-explained.com/",
-        "https://kadhar.dev/blog/multi-agent-systems-from-scratch",
-        "https://phoboslab.org/log/2026/11/n64-ulc-codec",
+        "https://github.com/anthropics/claude-code/issues/107757",
+        "https://finlaws.substack.com/p/25t-has-been-wiped-from-us-stocks",
+        "https://www.cve.org/CVERecord?id=CVE-2026-83844",
+        "https://www.bbc.com/news/articles/cqrkyyd2j8mvo",
+        "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
+        "https://kagi.com/changelog#11820",
+        "https://www.salon.com/2026/11/05/goodbye-from-salon/",
+        "https://www.euronews.com/2026/11/04/hungary-communist-era-files-opened-up-to-60000-former-agents-revealed",
+        "https://www.naut.ca/blog/2026/11/05/the-hackintosh-reborn-with-ai/",
+        "https://archive.org/details/howtoliewithstat00huff",
         "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026",
-        "https://nullprogram.com/blog/2026/11/05/",
+        "https://shayon.work/blog/reverse-engineering-gym-pass",
+        "https://github.com/rivet-dev/rivet",
         "https://www.cnbc.com/2026/11/04/stock-market-today-live-updates.html",
-        "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/"
+        "https://github.com/saragordic/window-sweaters",
+        "https://www.keychron.com/products/keychron-f4-he-8k-vibe-coding-keypad",
+        "https://www.aljazeera.com/video/newsfeed/2026/11/5/paraguay-bank-collapses-with-half-of-populations-savings",
+        "https://claude.ai/artifact/L8qsMc3SorytGW3LA81nYf",
+        "https://axiommath.ai/research/the-stacks-project-formalized/",
+        "https://motorolanews.com/motorola-signature-27-2/"
       ],
       "bayesian_trust_score": 0.99
-    },
-    {
-      "feed_category": "global_tech_intelligence",
-      "source_url": "https://hnrss.org/newest?points=50",
-      "status": "ERR:HTTP Error 502: Bad Gateway",
-      "retained_facts": [],
-      "verified_payload": [],
-      "bayesian_trust_score": 0.25
     },
     {
       "feed_category": "verified_job_openings",
       "source_url": "https://remoteok.com/api",
       "status": "HEALED_AND_EXTRACTED",
       "self_healed_strategy": "rea_50x_polyglot_surface",
-      "extraction_latency_ms": 568.34,
+      "extraction_latency_ms": 611.73,
       "discovered_routes": [],
       "item_count": 24,
       "retained_facts": [
+        {
+          "fact_text": "Senior Staff Infrastructure & Security Engineer",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-senior-staff-infrastructure-security-engineer-civilgrid-1137687",
+          "category": "verified_job_openings"
+        },
+        {
+          "fact_text": "AI Content Reviewer Video Annotation",
+          "source_url": "https://remoteOK.com/remote-jobs/remote-ai-content-reviewer-video-annotation-imerit-1137686",
+          "category": "verified_job_openings"
+        },
         {
           "fact_text": "Software Engineer",
           "source_url": "https://remoteOK.com/remote-jobs/remote-software-engineer-claims-1137685",
@@ -304,19 +478,11 @@
           "fact_text": "Front End Developer",
           "source_url": "https://remoteOK.com/remote-jobs/remote-front-end-developer-edconic-1137597",
           "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "Senior Software Engineer LATAM",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-latam-wagmo-1137572",
-          "category": "verified_job_openings"
-        },
-        {
-          "fact_text": "Senior Software Engineer",
-          "source_url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-klardaten-1137571",
-          "category": "verified_job_openings"
         }
       ],
       "verified_payload": [
+        "https://remoteOK.com/remote-jobs/remote-senior-staff-infrastructure-security-engineer-civilgrid-1137687",
+        "https://remoteOK.com/remote-jobs/remote-ai-content-reviewer-video-annotation-imerit-1137686",
         "https://remoteOK.com/remote-jobs/remote-software-engineer-claims-1137685",
         "https://remoteOK.com/remote-jobs/remote-entry-level-scheduling-amp-coordinating-reservations-online-destination-careers-1137680",
         "https://remoteOK.com/remote-jobs/remote-ma-praktikum-intern-vogel-1137677",
@@ -334,9 +500,7 @@
         "https://remoteOK.com/remote-jobs/remote-scientific-account-executive-adaptyv-1137608",
         "https://remoteOK.com/remote-jobs/remote-contract-recruiter-cai-1137607",
         "https://remoteOK.com/remote-jobs/remote-aws-cloud-solutions-architect-cloudary-sas-1137606",
-        "https://remoteOK.com/remote-jobs/remote-online-client-support-amp-travel-booking-we-will-train-you-destination-careers-1137604",
-        "https://remoteOK.com/remote-jobs/remote-country-manager-canada-polaroid-1137602",
-        "https://remoteOK.com/remote-jobs/remote-client-support-amp-travel-booking-online-destination-careers-1137601"
+        "https://remoteOK.com/remote-jobs/remote-online-client-support-amp-travel-booking-we-will-train-you-destination-careers-1137604"
       ],
       "bayesian_trust_score": 0.96
     },
@@ -345,7 +509,7 @@
       "source_url": "https://www.arbeitnow.com/api/job-board-api",
       "status": "EMPTY",
       "self_healed_strategy": "rea_50x_polyglot_surface",
-      "extraction_latency_ms": 177.87,
+      "extraction_latency_ms": 159.14,
       "discovered_routes": [],
       "item_count": 0,
       "retained_facts": [],
@@ -357,7 +521,7 @@
       "source_url": "https://arxiv.org/rss/cs.AI",
       "status": "HEALED_AND_EXTRACTED",
       "self_healed_strategy": "rea_50x_polyglot_surface",
-      "extraction_latency_ms": 436.23,
+      "extraction_latency_ms": 244.57,
       "discovered_routes": [
         "http://arxiv.org/schemas/atom",
         "http://purl.org/dc/elements/1.1/",
