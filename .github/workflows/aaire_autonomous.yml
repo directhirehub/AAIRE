@@ -1,0 +1,57 @@
+name: AAIRE v12.0 Unified 59-Tools & Micro-Kernel Pipeline
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      service_mode:
+        description: "Select Dedicated Folder / Capability"
+        required: true
+        default: "auto"
+        type: choice
+        options:
+          - auto
+          - full_sync
+          - binary_tools
+          - mobile_dotnet
+          - web_js_models
+          - missing_4_decompiler
+          - partial_13_completer
+          - build_fullstack_app
+      task_prompt:
+        description: "Input Prompt, File Path, or URL"
+        required: false
+        default: "build autonomous career portal"
+
+permissions:
+  contents: write
+
+jobs:
+  run-unified-aaire-kernel:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: ${{ github.workspace }}
+    steps:
+      - name: 1. Checkout AAIRE Repository
+        uses: actions/checkout@v4
+
+      - name: 2. Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 3. Execute Unified AAIRE Master Brain (All 9 Core Folders)
+        run: |
+          python3 aaire_core/master_orchestrator.py "${{ github.event.inputs.service_mode || 'auto' }}" "${{ github.event.inputs.task_prompt || 'build career portal' }}"
+
+      - name: 4. Commit Updated Storage, Generated Apps & Backups
+        run: |
+          git config user.name "AAIRE-v12 Kernel"
+          git config user.email "bot@directhirehub.in"
+          git add aaire_storage/
+          git diff --staged --quiet || git commit -m "⚡ [AAIRE-v12] Sync All 59 REA Tools, Apps & Backups [skip ci]"
+          git push origin main
+          
