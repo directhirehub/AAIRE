@@ -1,7 +1,7 @@
 {
   "version": "AAIRE-v12.0-Unified-59Tools",
   "os": "linux",
-  "latency_ms": 1.49,
+  "latency_ms": 3.72,
   "seal": {
     "scheme": "AAIRE-PublicSeal-v12",
     "pub_key": "2494ea82bb466553c5850f19",
