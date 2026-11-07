@@ -1,0 +1,34 @@
+{
+  "cluster": "aaire-global-mesh",
+  "generated_at": 1794012444.72,
+  "dockerfile": "FROM python:3.11-slim\nWORKDIR /aaire\nCOPY aaire_core/ ./aaire_core/\nCOPY aaire_storage/ ./aaire_storage/\nENV PYTHONUNBUFFERED=1 AAIRE_NODE_ROLE=worker\nUSER 1000:1000\nCMD [\"python3\", \"aaire_core/master_orchestrator.py\", \"auto\"]\n",
+  "compose_services": {
+    "node_1": {
+      "build": ".",
+      "restart": "unless-stopped",
+      "mem_limit": "256m",
+      "environment": [
+        "NODE_ID=aaire_node_1",
+        "CLUSTER_MODE=autonomous"
+      ]
+    },
+    "node_2": {
+      "build": ".",
+      "restart": "unless-stopped",
+      "mem_limit": "256m",
+      "environment": [
+        "NODE_ID=aaire_node_2",
+        "CLUSTER_MODE=autonomous"
+      ]
+    },
+    "node_3": {
+      "build": ".",
+      "restart": "unless-stopped",
+      "mem_limit": "256m",
+      "environment": [
+        "NODE_ID=aaire_node_3",
+        "CLUSTER_MODE=autonomous"
+      ]
+    }
+  }
+}

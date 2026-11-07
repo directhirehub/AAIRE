@@ -1,12 +1,12 @@
 {
-  "version": "AAIRE-v12.0-Unified-59Tools",
+  "version": "AAIRE-v13.0-EdgeCluster-Kernel",
   "os": "linux",
-  "latency_ms": 2.02,
+  "latency_ms": 1.66,
   "seal": {
     "scheme": "AAIRE-PublicSeal-v12",
     "pub_key": "2494ea82bb466553c5850f19",
-    "sha256": "9424ef7f3327c4960cb1b18104716f3fe4fa16a2b4ae4cbe96a9c5b931ff7f7e",
-    "signature": "8336409405aa3c92e1c0fef076da4b35ef97256b827c98e753cab661454b9c84"
+    "sha256": "d1eaa4c046706ff34f34100fe2143f4f09fef46108eb358ec13e3243b23946d0",
+    "signature": "3974482bdf8b3fe05046369978c64380f1ce9b3256b6562f54ce0195aeedf838"
   },
   "modules": {
     "detector_25": "unknown_or_source_text",
@@ -16,6 +16,9 @@
     "missing_4_completed": "IMPLEMENTED",
     "partial_13_completed": "FULL_BYTECODE_DECOMPILED",
     "mcp_and_11_skills": "BUILD",
-    "dynamic_synthesizer": "AST_VERIFIED_APP_GENERATED"
+    "dynamic_synthesizer": "AST_VERIFIED_APP_GENERATED",
+    "edge_container_forge": "CONTAINER_SPEC_READY",
+    "hardware_supervisor": "WORKER_HEARTBEAT_OK",
+    "visual_telemetry_demo": "VISUAL_DEMO_RENDERED"
   }
 }
