@@ -1,7 +1,7 @@
 {
   "version": "AAIRE-v13.0-EdgeCluster-Kernel",
   "os": "linux",
-  "latency_ms": 2.14,
+  "latency_ms": 1.71,
   "seal": {
     "scheme": "AAIRE-PublicSeal-v12",
     "pub_key": "2494ea82bb466553c5850f19",
