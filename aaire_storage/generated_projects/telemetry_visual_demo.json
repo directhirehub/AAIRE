@@ -2,15 +2,15 @@
   "visual_engine": "AAIRE-Visual-Telemetry-v1",
   "metrics": {
     "supervisor": "AAIRE-Edge-Supervisor-v1.0",
-    "node_id": "build career portal",
+    "node_id": "build autonomous career portal",
     "os_platform": "linux",
     "cpu_arch": "x86_64",
     "cpu_cores": 4,
-    "load_1m": 0.42,
+    "load_1m": 0.25,
     "disk_free_gb": 87.75,
     "disk_total_gb": 144.35,
     "supervisor_action": "WORKER_HEARTBEAT_OK",
-    "timestamp": 1794163010.02
+    "timestamp": 1794167406.0
   },
-  "html_preview": "<!DOCTYPE html><html><head><meta charset='utf-8'><title>AAIRE Live Telemetry</title><script src='https://cdn.tailwindcss.com'></script></head><body class='bg-slate-950 text-cyan-400 p-8 font-mono'><h1 class='text-2xl font-bold mb-6'>\u26a1 AAIRE Edge Supervisor & Node Topology (build career portal)</h1><div class='grid grid-cols-3 gap-4 mb-6'><div class='p-4 bg-slate-900 border border-cyan-500/40 rounded-xl'>CPU Cores: <b class='text-white'>4</b></div><div class='p-4 bg-slate-900 border border-emerald-500/40 rounded-xl'>Free Disk: <b class='text-white'>87.75 GB</b></div><div class='p-4 bg-slate-900 border border-purple-500/40 rounded-xl'>Active Cluster Nodes: <b class='text-white'>3</b></div></div><svg viewBox='0 0 400 100' class='w-full bg-slate-900 rounded-xl border border-slate-800 p-4'><line x1='70' y1='50' x2='200' y2='50' stroke='#22d3ee' stroke-width='2'/><line x1='200' y1='50' x2='330' y2='50' stroke='#10b981' stroke-width='2'/><circle cx='70' cy='50' r='18' fill='#0891b2'/><circle cx='200' cy='50' r='22' fill='#059669'/><circle cx='330' cy='50' r='18' fill='#7c3aed'/></svg></body></html>"
+  "html_preview": "<!DOCTYPE html><html><head><meta charset='utf-8'><title>AAIRE Live Telemetry</title><script src='https://cdn.tailwindcss.com'></script></head><body class='bg-slate-950 text-cyan-400 p-8 font-mono'><h1 class='text-2xl font-bold mb-6'>\u26a1 AAIRE Edge Supervisor & Node Topology (build autonomous career portal)</h1><div class='grid grid-cols-3 gap-4 mb-6'><div class='p-4 bg-slate-900 border border-cyan-500/40 rounded-xl'>CPU Cores: <b class='text-white'>4</b></div><div class='p-4 bg-slate-900 border border-emerald-500/40 rounded-xl'>Free Disk: <b class='text-white'>87.75 GB</b></div><div class='p-4 bg-slate-900 border border-purple-500/40 rounded-xl'>Active Cluster Nodes: <b class='text-white'>3</b></div></div><svg viewBox='0 0 400 100' class='w-full bg-slate-900 rounded-xl border border-slate-800 p-4'><line x1='70' y1='50' x2='200' y2='50' stroke='#22d3ee' stroke-width='2'/><line x1='200' y1='50' x2='330' y2='50' stroke='#10b981' stroke-width='2'/><circle cx='70' cy='50' r='18' fill='#0891b2'/><circle cx='200' cy='50' r='22' fill='#059669'/><circle cx='330' cy='50' r='18' fill='#7c3aed'/></svg></body></html>"
 }
