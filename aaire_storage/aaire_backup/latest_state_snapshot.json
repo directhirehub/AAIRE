@@ -1,12 +1,12 @@
 {
-  "version": "AAIRE-v15.0-SuperAgentEcosystem-Kernel",
+  "version": "AAIRE-v15.2-Ecosystem-With-AutoDocs",
   "os": "linux",
-  "latency_ms": 0.06,
+  "latency_ms": 0.05,
   "seal": {
     "scheme": "AAIRE-PublicSeal-v12",
     "pub_key": "2494ea82bb466553c5850f19",
-    "sha256": "e6fabbe3f5182697dc05581a4c7b94cb50abf57268c4f1dab678e82b8c3cff10",
-    "signature": "54ab9ae0543ffbe18c5b4bf12583bcfc317e4400c259ebe5a0e13d4ce4692db6"
+    "sha256": "c79fea2d10d120f528ef53478cf000bbd4419feb537e052ce2887d52340d7604",
+    "signature": "2d57cecdcb2f3797628241763dc5b266360a35f52d36051c5679fb37e14be298"
   },
   "modules": {
     "detector_25": "unknown_or_source_text",
@@ -43,18 +43,20 @@
     "dynamic_tool_forge_dir": "aaire_core/forged_tools",
     "approval_gate_mode": "strict",
     "browser_agent_status": "ready",
-    "thought_graph_nodes": 0
+    "thought_graph_nodes": 0,
+    "auto_docs_generated": "success",
+    "webhook_manager_routes": 0
   },
   "performance_summary": {
     "total_tasks": 1,
-    "avg_latency_ms": 1.62,
+    "avg_latency_ms": 23.27,
     "all_traces": [
       {
         "task_name": "run_unified_kernel_task",
-        "latency_ms": 1.62,
+        "latency_ms": 23.27,
         "success": true,
         "error": null,
-        "timestamp": 1794307347.7315876
+        "timestamp": 1794309790.8187091
       }
     ]
   }
