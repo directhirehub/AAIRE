@@ -9,7 +9,8 @@ class AAIRECodeAnalyzer:
     यह पायथन कोड की संरचना, फंक्शन्स और सुरक्षा की जांच करता है।
     """
     def __init__(self):
-        self.forbidden_nodes = {ast.Exec}  # पुरानी या असुरक्षित नोड्स
+        # आधुनिक पाइथन वर्जन्स के अनुसार असुरक्षित या अप्रचलित नोड्स की सूची (ast.Exec को हटाया गया)
+        self.forbidden_nodes = set()  
 
     def analyze_source_code(self, code_str: str) -> Dict[str, Any]:
         """
@@ -44,10 +45,22 @@ class AAIRECodeAnalyzer:
             elif isinstance(node, ast.ImportFrom):
                 if node.module:
                     report["imports"].append(node.module)
-            elif isinstance(node, tuple(self.forbidden_nodes)):
+            elif self.forbidden_nodes and isinstance(node, tuple(self.forbidden_nodes)):
                 report["issues"].append(f"Forbidden construct detected: {type(node).__name__}")
 
         report["total_functions"] = len(report["functions"])
         report["total_imports"] = len(report["imports"])
         return report
-      
+
+    def analyze_code_metrics(self, code_str: str) -> Dict[str, Any]:
+        """
+        कोड के मेट्रिक्स और स्टेटस की त्वरित जांच के लिए सहायक मेथड।
+        """
+        res = self.analyze_source_code(code_str)
+        return {
+            "status": "success" if res["is_valid_syntax"] else "syntax_error",
+            "functions_count": res["total_functions"],
+            "imports_count": res["total_imports"],
+            "issues": res["issues"]
+        }
+        
