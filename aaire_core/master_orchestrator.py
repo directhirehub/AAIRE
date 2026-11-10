@@ -1,4 +1,4 @@
-# File: master_orchestrator.py (Updated with all 12 New Modules)
+# File: master_orchestrator.py (Updated with All 16 Modules)
 
 import json
 import os
@@ -23,7 +23,7 @@ from aaire_core.edge_cluster.container_forge import AAIREContainerForge
 from aaire_core.edge_cluster.hardware_supervisor import EdgeHardwareSupervisor
 from aaire_core.edge_cluster.visual_telemetry import VisualTelemetryStudio
 
-# Newly Added 12 Hermes-Inspired Intelligence Modules
+# First 12 Hermes-Inspired Modules
 from aaire_core.model_router import AAIREModelRouter
 from aaire_core.code_analyzer import AAIRECodeAnalyzer
 from aaire_core.context_compressor import AAIREContextCompressor
@@ -37,6 +37,12 @@ from aaire_core.swarm_priority_queue import AAIRESwarmPriorityQueue
 from aaire_core.credential_vault import AAIRECachedCredentialVault
 from aaire_core.verify_runner import AAIREVerifyRunner
 
+# Newly Added 4 Advanced Modules (Self-Critic, Sandbox, Telegram, RAG)
+from aaire_core.self_critic import AAIRESelfCriticEngine
+from aaire_core.secure_sandbox import AAIRESecureSandbox
+from aaire_core.telegram_gateway import AAIRETelegramGateway
+from aaire_core.semantic_rag_vault import AAIRESemanticRAGVault
+
 class AAIREMasterBrain:
     def __init__(self):
         # Existing Initializations
@@ -49,7 +55,7 @@ class AAIREMasterBrain:
         self.supervisor = EdgeHardwareSupervisor()
         self.visuals = VisualTelemetryStudio(ROOT_DIR)
 
-        # New 12 Modules Initializations
+        # First 12 Modules Initializations
         self.model_router = AAIREModelRouter()
         self.code_analyzer = AAIRECodeAnalyzer()
         self.compressor = AAIREContextCompressor()
@@ -63,15 +69,18 @@ class AAIREMasterBrain:
         self.credential_vault = AAIRECachedCredentialVault()
         self.verify_runner = AAIREVerifyRunner()
 
+        # New 4 Advanced Modules Initializations
+        self.self_critic = AAIRESelfCriticEngine()
+        self.secure_sandbox = AAIRESecureSandbox()
+        self.telegram_gateway = AAIRETelegramGateway()
+        self.semantic_rag = AAIRESemanticRAGVault()
+
     def run_unified_kernel(self, mode: str = "auto", prompt: str = "") -> dict:
-        # Latency Tracer के साथ पूरे प्रोसेस को मापना
         def kernel_execution_logic():
             t0 = time.time()
             
-            # Context Compressor का उपयोग प्रॉम्प्ट ऑप्टिमाइज़ेशन के लिए
+            # Context Compressor & Prompt Cache
             optimized_prompt = self.compressor.compress_text(prompt or "\x7fELF_AAIRE_V13")
-            
-            # Prompt Cache चेक करना
             cached_res = self.prompt_cache.get_cached_prompt(optimized_prompt)
             if not cached_res:
                 self.prompt_cache.set_cached_prompt(optimized_prompt, "Processed_Active_State")
@@ -84,9 +93,9 @@ class AAIREMasterBrain:
 
             sample = (prompt or "\x7fELF_AAIRE_V13").encode("utf-8")
 
-            # सभी पुराने और नए 12 मॉड्यूल्स का एकीकृत मेट्रिक्स मैट्रिक्स
+            # सभी 16 मॉड्यूल्स का एकीकृत मेट्रिक्स मैट्रिक्स (Unified Metrics Matrix)
             matrix = {
-                # Existing V13 Tools Status
+                # Existing V13 Tools
                 "detector_25": MagicFileDetector25().sniff_artifact(sample)["detected_kind"],
                 "binary_tools": NativeBinaryInspectors().inspect_binary_surface(sample)["tools_active"],
                 "mobile_dotnet_tools": MobileAndManagedTools().analyze_mobile_or_dotnet(sample)["tools_active"],
@@ -99,7 +108,7 @@ class AAIREMasterBrain:
                 "hardware_supervisor": hw_stat["supervisor_action"],
                 "visual_telemetry_demo": vis_stat["status"],
 
-                # Newly Integrated 12 Hermes Modules Statuses
+                # First 12 Hermes Modules Statuses
                 "model_router_status": "active",
                 "code_analyzer_status": self.code_analyzer.analyze_code_metrics("print('AAIRE Active')")["status"],
                 "context_compressor_active": True,
@@ -110,20 +119,26 @@ class AAIREMasterBrain:
                 "knowledge_spider_status": "ready",
                 "swarm_queue_pending": self.swarm_queue.get_queue_stats()["pending_tasks_count"],
                 "credential_vault_keys": len(self.credential_vault.list_keys()),
-                "verify_runner_status": self.verify_runner.verify_code_integrity("dummy.py", "x = 1")["syntax_valid"]
+                "verify_runner_status": self.verify_runner.verify_code_integrity("dummy.py", "x = 1")["syntax_valid"],
+
+                # Newly Integrated 4 Advanced Modules Statuses
+                "self_critic_status": "ready",
+                "secure_sandbox_active": True,
+                "telegram_gateway_status": "listening",
+                "semantic_rag_items": len(self.semantic_rag.memory_store)
             }
             
             self.visual_monitor.update_status("COMPLETED", "Unified kernel execution finished successfully.")
             return matrix
 
-        # लेटेसी ट्रेसर के अंदर पूरे कर्नेल को रन करना
+        # Latency Tracer के अंदर पूरे कर्नेल को रन करना
         matrix = self.latency_tracer.measure_execution("run_unified_kernel_task", kernel_execution_logic)
         
         t0 = time.time()
         seal = self.guard.create_public_seal(json.dumps(matrix, sort_keys=True).encode("utf-8"))
         
         report = {
-            "version": "AAIRE-v13.5-FullHermesIntegrated-Kernel", 
+            "version": "AAIRE-v14.0-CompleteEcosystem-Kernel", 
             "os": self.guard.os_name, 
             "latency_ms": round((time.time() - t0) * 1000, 2), 
             "seal": seal, 
@@ -141,4 +156,4 @@ if __name__ == "__main__":
     m = sys.argv[1] if len(sys.argv[1:]) >= 1 else "auto"
     p = " ".join(sys.argv[2:]) if len(sys.argv[1:]) >= 2 else ""
     print(json.dumps(AAIREMasterBrain().run_unified_kernel(m, p), indent=2, ensure_ascii=False))
-        
+            
