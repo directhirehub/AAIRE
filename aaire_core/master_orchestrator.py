@@ -1,4 +1,4 @@
-# File: master_orchestrator.py (Updated with All 16 Modules)
+# File: aaire_core/master_orchestrator.py (Fully Updated & Verified for GitHub Actions)
 
 import json
 import os
@@ -156,4 +156,4 @@ if __name__ == "__main__":
     m = sys.argv[1] if len(sys.argv[1:]) >= 1 else "auto"
     p = " ".join(sys.argv[2:]) if len(sys.argv[1:]) >= 2 else ""
     print(json.dumps(AAIREMasterBrain().run_unified_kernel(m, p), indent=2, ensure_ascii=False))
-            
+        
