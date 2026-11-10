@@ -1,7 +1,7 @@
 {
   "version": "AAIRE-v15.0-SuperAgentEcosystem-Kernel",
   "os": "linux",
-  "latency_ms": 0.08,
+  "latency_ms": 0.06,
   "seal": {
     "scheme": "AAIRE-PublicSeal-v12",
     "pub_key": "2494ea82bb466553c5850f19",
@@ -47,14 +47,14 @@
   },
   "performance_summary": {
     "total_tasks": 1,
-    "avg_latency_ms": 9.18,
+    "avg_latency_ms": 1.62,
     "all_traces": [
       {
         "task_name": "run_unified_kernel_task",
-        "latency_ms": 9.18,
+        "latency_ms": 1.62,
         "success": true,
         "error": null,
-        "timestamp": 1794307257.2189736
+        "timestamp": 1794307347.7315876
       }
     ]
   }
