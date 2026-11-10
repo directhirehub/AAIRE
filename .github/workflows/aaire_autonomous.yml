@@ -40,16 +40,17 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Inject Unlimited Swarm & Genesis Runtime Config
+      - name: Inject Unlimited Swarm & 16-Module Genesis Runtime Config
         run: |
           cat << 'EOF' > /tmp/aaire_swarm_runtime.json
           {
-            "swarm_version": "4.1-unlimited-genesis",
+            "swarm_version": "14.0-complete-ecosystem",
             "orchestration": {
               "mode": "elastic_async_dag",
               "max_agents": "unlimited",
               "dynamic_agent_forge": true,
-              "auto_spawn_custom_roles": true
+              "auto_spawn_custom_roles": true,
+              "total_active_modules": 16
             },
             "quality_gate": {
               "enabled": true,
@@ -60,13 +61,9 @@ jobs:
           EOF
           echo "SWARM_CONFIG_PATH=/tmp/aaire_swarm_runtime.json" >> $GITHUB_ENV
 
-      - name: Execute AAIRE Master Orchestrator
+      - name: Execute AAIRE Master Orchestrator (16-Module Unified Kernel)
         run: |
-          python -c "
-          import os, sys
-          sys.path.insert(0, os.path.abspath('.'))
-          print('[AAIRE] Autonomous Swarm Pipeline Initialized with Unlimited Dynamic Agents.')
-          "
+          python master_orchestrator.py auto "${{ github.event.inputs.swarm_objective || 'autonomous_maintenance_and_sync' }}"
           pytest aaire_tests/ || true
 
       - name: Commit & Sync Autonomous State Snapshots
@@ -74,5 +71,5 @@ jobs:
           git config --local user.email "aaire-bot@users.noreply.github.com"
           git config --local user.name "AAIRE Autonomous Core"
           git add aaire_storage/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(swarm): autonomous state & unlimited agent sync" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(swarm): sync 16-module autonomous kernel & state snapshots" && git push)
           
