@@ -13,7 +13,6 @@ on:
 env:
   PYTHONUNBUFFERED: "1"
   SWARM_ENABLED: "true"
-  # बिना किसी गिनती की पाबंदी के अनलिमिटेड एजेंट्स और डायनामिक जेनेसिस मोड
   SWARM_SCALING_MODE: "dynamic_unlimited"
   SWARM_ALLOW_DYNAMIC_AGENT_CREATION: "true"
   DECOMPOSER_MAX_SUBTASKS: "UNLIMITED"
@@ -40,19 +39,19 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Inject Unlimited Swarm & Complete Ecosystem Runtime Config
+      - name: Inject Super-Agent Ecosystem Runtime Config
         run: |
           cat << 'EOF' > /tmp/aaire_swarm_runtime.json
           {
-            "swarm_version": "14.0-complete-ecosystem-unified",
+            "swarm_version": "15.0-super-agent-ecosystem",
             "orchestration": {
               "mode": "elastic_async_dag",
               "max_agents": "unlimited",
               "dynamic_agent_forge": true,
               "auto_spawn_custom_roles": true,
               "total_legacy_modules": 12,
-              "total_advanced_modules": 16,
-              "total_active_ecosystem_modules": 28
+              "total_advanced_modules": 21,
+              "total_active_ecosystem_modules": 33
             },
             "quality_gate": {
               "enabled": true,
@@ -63,7 +62,7 @@ jobs:
           EOF
           echo "SWARM_CONFIG_PATH=/tmp/aaire_swarm_runtime.json" >> $GITHUB_ENV
 
-      - name: Execute AAIRE Master Orchestrator (Complete Unified Kernel)
+      - name: Execute AAIRE Master Orchestrator (Super-Agent Kernel)
         run: |
           python aaire_core/master_orchestrator.py auto "${{ github.event.inputs.swarm_objective || 'autonomous_maintenance_and_sync' }}"
           pytest aaire_tests/ || true
@@ -73,5 +72,5 @@ jobs:
           git config --local user.email "aaire-bot@users.noreply.github.com"
           git config --local user.name "AAIRE Autonomous Core"
           git add aaire_storage/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(swarm): sync complete 28-module ecosystem kernel & state snapshots" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(swarm): sync complete 33-module super-agent ecosystem kernel" && git push)
           
