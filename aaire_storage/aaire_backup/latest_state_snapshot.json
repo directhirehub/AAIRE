@@ -1,7 +1,7 @@
 {
   "version": "AAIRE-v14.0-CompleteEcosystem-Kernel",
   "os": "linux",
-  "latency_ms": 0.05,
+  "latency_ms": 0.07,
   "seal": {
     "scheme": "AAIRE-PublicSeal-v12",
     "pub_key": "2494ea82bb466553c5850f19",
@@ -42,14 +42,14 @@
   },
   "performance_summary": {
     "total_tasks": 1,
-    "avg_latency_ms": 1.46,
+    "avg_latency_ms": 2.22,
     "all_traces": [
       {
         "task_name": "run_unified_kernel_task",
-        "latency_ms": 1.46,
+        "latency_ms": 2.22,
         "success": true,
         "error": null,
-        "timestamp": 1794306581.560346
+        "timestamp": 1794306600.052863
       }
     ]
   }
