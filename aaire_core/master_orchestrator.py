@@ -1,4 +1,4 @@
-# File: aaire_core/master_orchestrator.py (Fully Updated with 21 Advanced + 12 Legacy Modules)
+# File: aaire_core/master_orchestrator.py (Updated with Auto-Docs & Webhook Manager)
 
 import json
 import os
@@ -41,12 +41,16 @@ from aaire_core.secure_sandbox import AAIRESecureSandbox
 from aaire_core.telegram_gateway import AAIRETelegramGateway
 from aaire_core.semantic_rag_vault import AAIRESemanticRAGVault
 
-# Newly Added 5 Super-Agent Modules
+# 5 Super-Agent Modules
 from aaire_core.consensus_engine import AAIREConsensusEngine
 from aaire_core.dynamic_tool_forge import AAIREDynamicToolForge
 from aaire_core.approval_gate import AAIREApprovalGate
 from aaire_core.browser_agent import AAIREBrowserAgent
 from aaire_core.thought_graph import AAIREThoughtGraph
+
+# Newly Added Feature Modules
+from aaire_core.auto_docs import AAIREAutoDocumentation
+from aaire_core.webhook_manager import AAIREWebhookManager
 
 class AAIREMasterBrain:
     def __init__(self):
@@ -78,12 +82,16 @@ class AAIREMasterBrain:
         self.telegram_gateway = AAIRETelegramGateway()
         self.semantic_rag = AAIRESemanticRAGVault()
 
-        # New 5 Super-Agent Initializations
+        # 5 Super-Agent Initializations
         self.consensus_engine = AAIREConsensusEngine()
         self.dynamic_tool_forge = AAIREDynamicToolForge()
         self.approval_gate = AAIREApprovalGate()
         self.browser_agent = AAIREBrowserAgent()
         self.thought_graph = AAIREThoughtGraph()
+
+        # New Documentations & Webhook Managers
+        self.auto_docs = AAIREAutoDocumentation(os.path.join(ROOT_DIR, "aaire_core"))
+        self.webhook_manager = AAIREWebhookManager()
 
     def run_unified_kernel(self, mode: str = "auto", prompt: str = "") -> dict:
         def kernel_execution_logic():
@@ -100,9 +108,16 @@ class AAIREMasterBrain:
             cluster_spec = self.forge.synthesize_cluster_spec("aaire-global-mesh", 3)
             vis_stat = self.visuals.render_visual_dashboard(hw_stat, cluster_spec)
 
+            # ऑटो-डॉक्यूमेंटेशन जनरेट करके स्टोरेज में सेव करना
+            docs_summary_md = self.auto_docs.generate_markdown_summary()
+            docs_output_path = os.path.join(ROOT_DIR, "aaire_storage", "system_docs.md")
+            os.makedirs(os.path.dirname(docs_output_path), exist_ok=True)
+            with open(docs_output_path, "w", encoding="utf-8") as doc_file:
+                doc_file.write(docs_summary_md)
+
             sample = (prompt or "\x7fELF_AAIRE_SUPER").encode("utf-8")
 
-            # सभी 33 मॉड्यूल्स का एकीकृत मेट्रिक्स मैट्रिक्स
+            # सभी मॉड्यूल्स का एकीकृत मेट्रिक्स मैट्रिक्स
             matrix = {
                 # Legacy V13 Tools
                 "detector_25": MagicFileDetector25().sniff_artifact(sample)["detected_kind"],
@@ -134,15 +149,19 @@ class AAIREMasterBrain:
                 "telegram_gateway_status": "listening",
                 "semantic_rag_items": len(self.semantic_rag.memory_store),
 
-                # Newly Added 5 Super-Agent Statuses
+                # 5 Super-Agent Statuses
                 "consensus_engine_status": "ready",
                 "dynamic_tool_forge_dir": self.dynamic_tool_forge.tools_dir,
                 "approval_gate_mode": "strict" if self.approval_gate.strict_mode else "loose",
                 "browser_agent_status": "ready",
-                "thought_graph_nodes": len(self.thought_graph.nodes)
+                "thought_graph_nodes": len(self.thought_graph.nodes),
+
+                # New Added Feature Modules Statuses
+                "auto_docs_generated": "success",
+                "webhook_manager_routes": len(self.webhook_manager.routes)
             }
             
-            self.visual_monitor.update_status("COMPLETED", "Super-Agent unified kernel execution finished successfully.")
+            self.visual_monitor.update_status("COMPLETED", "Full ecosystem execution & auto-documentation finished.")
             return matrix
 
         matrix = self.latency_tracer.measure_execution("run_unified_kernel_task", kernel_execution_logic)
@@ -151,7 +170,7 @@ class AAIREMasterBrain:
         seal = self.guard.create_public_seal(json.dumps(matrix, sort_keys=True).encode("utf-8"))
         
         report = {
-            "version": "AAIRE-v15.0-SuperAgentEcosystem-Kernel", 
+            "version": "AAIRE-v15.2-Ecosystem-With-AutoDocs", 
             "os": self.guard.os_name, 
             "latency_ms": round((time.time() - t0) * 1000, 2), 
             "seal": seal, 
@@ -169,4 +188,4 @@ if __name__ == "__main__":
     m = sys.argv[1] if len(sys.argv[1:]) >= 1 else "auto"
     p = " ".join(sys.argv[2:]) if len(sys.argv[1:]) >= 2 else ""
     print(json.dumps(AAIREMasterBrain().run_unified_kernel(m, p), indent=2, ensure_ascii=False))
-                           
+            
