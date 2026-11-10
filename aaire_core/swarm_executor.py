@@ -1,59 +1,92 @@
-#!/usr/bin/env python3
-"""Multi-Worker Parallel Swarm Executor with Priority Queue & Telemetry."""
-from __future__ import annotations
-import time
-import queue
-from concurrent.futures import ThreadPoolExecutor, Future
-from dataclasses import dataclass, field
-from typing import Callable, Any, Dict, List
+# --- Unlimited Dynamic Swarm & Quality Gate Integration ---
+import asyncio
+from typing import Callable, Dict, Any, Optional
+from aaire_core.task_decomposer import TaskDecomposer, SubTask
+from aaire_core.quality_gate import SwarmQualityGate
 
 
-@dataclass(order=True)
-class SwarmTask:
-    priority: int
-    task_id: str = field(compare=False)
-    fn: Callable[..., Any] = field(compare=False)
-    args: tuple = field(default_factory=tuple, compare=False)
-    kwargs: dict = field(default_factory=dict, compare=False)
+class UnlimitedSwarmEngine:
+    """
+    बिना किसी एजेंट लिमिट के हर सब-टास्क के लिए नया स्पेशलिस्ट एजेंट बनाता है,
+    उन्हें एक साथ (Parallel) चलाता है और Quality Gate से चेक कराता है।
+    """
 
+    def __init__(self, max_retries: int = 3):
+        self.decomposer = TaskDecomposer(allow_unlimited=True)
+        self.quality_gate = SwarmQualityGate()
+        self.max_retries = max_retries
 
-class SwarmExecutor:
-    def __init__(self, max_workers: int = 4) -> None:
-        self.max_workers = max_workers
-        self.task_queue: queue.PriorityQueue[SwarmTask] = queue.PriorityQueue()
-        self.telemetry: Dict[str, Dict[str, Any]] = {}
-        self.dead_letter_queue: List[Dict[str, Any]] = []
+    async def _run_single_agent(
+        self,
+        subtask: SubTask,
+        agent_callback: Optional[Callable[[str, str, str], Any]] = None
+    ) -> Dict[str, Any]:
+        agent = subtask.agent_spec
+        expected_type = "python" if subtask.assigned_role == "coder" else "text"
 
-    def submit_task(self, task_id: str, fn: Callable[..., Any], priority: int = 5, *args: Any, **kwargs: Any) -> None:
-        self.task_queue.put(SwarmTask(priority, task_id, fn, args, kwargs))
+        for attempt in range(1, self.max_retries + 1):
+            if agent_callback:
+                raw_output = await asyncio.to_thread(
+                    agent_callback,
+                    agent.role_name,
+                    agent.system_prompt,
+                    subtask.description
+                )
+            else:
+                raw_output = (
+                    f"[{agent.agent_id} | {agent.role_name}] "
+                    f"Successfully executed task: {subtask.description}"
+                )
 
-    def _run_tracked(self, task: SwarmTask) -> Any:
-        start = time.perf_counter()
-        try:
-            result = task.fn(*task.args, **task.kwargs)
-            latency_ms = round((time.perf_counter() - start) * 1000, 2)
-            self.telemetry[task.task_id] = {"status": "SUCCESS", "latency_ms": latency_ms, "result": result}
-            return result
-        except Exception as exc:
-            latency_ms = round((time.perf_counter() - start) * 1000, 2)
-            err_info = {"task_id": task.task_id, "error": str(exc), "latency_ms": latency_ms}
-            self.telemetry[task.task_id] = {"status": "FAILED", **err_info}
-            self.dead_letter_queue.append(err_info)
-            return None
+            report = self.quality_gate.validate_agent_output(raw_output, expected_type=expected_type)
 
-    def execute_all(self) -> Dict[str, Any]:
-        tasks: List[SwarmTask] = []
-        while not self.task_queue.empty():
-            tasks.append(self.task_queue.get())
+            if report.passed:
+                subtask.status = "COMPLETED"
+                return {
+                    "task_id": subtask.task_id,
+                    "agent_id": agent.agent_id,
+                    "role": agent.role_name,
+                    "status": "PASSED",
+                    "score": report.score,
+                    "attempts": attempt,
+                    "output": raw_output
+                }
 
-        with ThreadPoolExecutor(max_workers=self.max_workers) as pool:
-            futures: List[Future] = [pool.submit(self._run_tracked, t) for t in tasks]
-            for f in futures:
-                f.result()
+            subtask.retries = attempt
+            subtask.status = "RETRYING"
 
         return {
-            "total_executed": len(tasks),
-            "failed_count": len(self.dead_letter_queue),
-            "telemetry": self.telemetry
-}
-      
+            "task_id": subtask.task_id,
+            "agent_id": agent.agent_id,
+            "role": agent.role_name,
+            "status": "FAILED_QUALITY_GATE",
+            "score": 0.0,
+            "attempts": self.max_retries,
+            "issues": report.issues
+        }
+
+    async def execute_unlimited_swarm(
+        self,
+        objective: str,
+        agent_callback: Optional[Callable[[str, str, str], Any]] = None
+    ) -> Dict[str, Any]:
+        subtasks = self.decomposer.decompose(objective)
+        worker_tasks = [t for t in subtasks if t.assigned_role != "validator"]
+
+        # सभी डायनामिक एजेंट्स को बिना किसी गिनती की रुकावट के एक साथ (Parallel) चलाएं
+        parallel_runs = [
+            self._run_single_agent(task, agent_callback) for task in worker_tasks
+        ]
+        results = await asyncio.gather(*parallel_runs)
+
+        passed_count = sum(1 for r in results if r["status"] == "PASSED")
+        return {
+            "objective": objective,
+            "total_dynamic_agents_spawned": len(worker_tasks),
+            "passed_quality_gate": passed_count,
+            "results": results
+        }
+
+    def run(self, objective: str, agent_callback: Optional[Callable[[str, str, str], Any]] = None) -> Dict[str, Any]:
+        return asyncio.run(self.execute_unlimited_swarm(objective, agent_callback))
+        
