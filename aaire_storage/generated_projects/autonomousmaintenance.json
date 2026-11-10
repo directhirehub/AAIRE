@@ -1,0 +1,5 @@
+{
+  "app": "AutonomousMaintenance",
+  "python_code": "from dataclasses import dataclass, asdict\n\n@dataclass\nclass AutonomousMaintenanceEntity:\n    maintenance: str = 'active'\n    sync: str = 'active'\n\ndef serve_autonomousmaintenance(req: dict) -> dict:\n    return {'service': 'AutonomousMaintenance', 'schema': asdict(AutonomousMaintenanceEntity()), 'req': req}\n",
+  "html_ui": "<!DOCTYPE html><html><head><script src='https://cdn.tailwindcss.com'></script></head><body class='bg-slate-950 text-white p-8'><h1 class='text-3xl font-bold text-emerald-400'>AutonomousMaintenance</h1><div class='grid grid-cols-3 gap-4 mt-6'><div class='p-4 rounded-xl bg-slate-900 border border-emerald-500/30'>Maintenance</div><div class='p-4 rounded-xl bg-slate-900 border border-emerald-500/30'>Sync</div></div></body></html>"
+}
