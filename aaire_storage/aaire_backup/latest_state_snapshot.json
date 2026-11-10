@@ -1,12 +1,12 @@
 {
-  "version": "AAIRE-v14.0-CompleteEcosystem-Kernel",
+  "version": "AAIRE-v15.0-SuperAgentEcosystem-Kernel",
   "os": "linux",
-  "latency_ms": 0.07,
+  "latency_ms": 0.08,
   "seal": {
     "scheme": "AAIRE-PublicSeal-v12",
     "pub_key": "2494ea82bb466553c5850f19",
-    "sha256": "3d4ddb06bb6d051d25187d4c7e80182a3487210fd6566d4ff180b4c8ea78074f",
-    "signature": "889278d404496314189de17df22a4381e325996e7aff7f7c1b981b6120385c51"
+    "sha256": "e6fabbe3f5182697dc05581a4c7b94cb50abf57268c4f1dab678e82b8c3cff10",
+    "signature": "54ab9ae0543ffbe18c5b4bf12583bcfc317e4400c259ebe5a0e13d4ce4692db6"
   },
   "modules": {
     "detector_25": "unknown_or_source_text",
@@ -24,7 +24,7 @@
     "code_analyzer_status": "success",
     "context_compressor_active": true,
     "visual_monitor_state": {
-      "agent": "AAIRE-MasterBrain-Agent",
+      "agent": "AAIRE-SuperMaster-Agent",
       "progress_bar": "[\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588] 100%",
       "current_state": "PROBING_HARDWARE"
     },
@@ -38,18 +38,23 @@
     "self_critic_status": "ready",
     "secure_sandbox_active": true,
     "telegram_gateway_status": "listening",
-    "semantic_rag_items": 0
+    "semantic_rag_items": 0,
+    "consensus_engine_status": "ready",
+    "dynamic_tool_forge_dir": "aaire_core/forged_tools",
+    "approval_gate_mode": "strict",
+    "browser_agent_status": "ready",
+    "thought_graph_nodes": 0
   },
   "performance_summary": {
     "total_tasks": 1,
-    "avg_latency_ms": 2.22,
+    "avg_latency_ms": 9.18,
     "all_traces": [
       {
         "task_name": "run_unified_kernel_task",
-        "latency_ms": 2.22,
+        "latency_ms": 9.18,
         "success": true,
         "error": null,
-        "timestamp": 1794306600.052863
+        "timestamp": 1794307257.2189736
       }
     ]
   }
