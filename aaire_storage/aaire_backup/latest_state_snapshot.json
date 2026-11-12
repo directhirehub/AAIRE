@@ -1,7 +1,7 @@
 {
   "version": "AAIRE-v15.2-Ecosystem-With-AutoDocs",
   "os": "linux",
-  "latency_ms": 0.09,
+  "latency_ms": 0.08,
   "seal": {
     "scheme": "AAIRE-PublicSeal-v12",
     "pub_key": "2494ea82bb466553c5850f19",
@@ -49,14 +49,14 @@
   },
   "performance_summary": {
     "total_tasks": 1,
-    "avg_latency_ms": 36.7,
+    "avg_latency_ms": 30.22,
     "all_traces": [
       {
         "task_name": "run_unified_kernel_task",
-        "latency_ms": 36.7,
+        "latency_ms": 30.22,
         "success": true,
         "error": null,
-        "timestamp": 1794488379.6101289
+        "timestamp": 1794509384.149799
       }
     ]
   }
