@@ -1,6 +1,6 @@
 {
   "cluster": "aaire-global-mesh",
-  "generated_at": 1794553428.38,
+  "generated_at": 1794574639.45,
   "dockerfile": "FROM python:3.11-slim\nWORKDIR /aaire\nCOPY aaire_core/ ./aaire_core/\nCOPY aaire_storage/ ./aaire_storage/\nENV PYTHONUNBUFFERED=1 AAIRE_NODE_ROLE=worker\nUSER 1000:1000\nCMD [\"python3\", \"aaire_core/master_orchestrator.py\", \"auto\"]\n",
   "compose_services": {
     "node_1": {
