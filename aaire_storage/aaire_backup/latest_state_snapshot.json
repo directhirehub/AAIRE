@@ -49,14 +49,14 @@
   },
   "performance_summary": {
     "total_tasks": 1,
-    "avg_latency_ms": 33.34,
+    "avg_latency_ms": 27.16,
     "all_traces": [
       {
         "task_name": "run_unified_kernel_task",
-        "latency_ms": 33.34,
+        "latency_ms": 27.16,
         "success": true,
         "error": null,
-        "timestamp": 1795812971.8825915
+        "timestamp": 1795849889.1149912
       }
     ]
   }
